@@ -1,2 +1,24 @@
 # Genetic Algorithm
-Genetic algorithm template to generate the sentence "To be or not to be."
+
+## Installation
+* Create new virtual environment
+```
+virtualenv venv
+```
+
+* Activate virtual environment
+```
+. venv/bin/activate
+```
+
+* Install packages
+```
+pip install -r requirements.txt
+```
+
+
+
+## Usage
+```
+python3 start.py
+```

@@ -1,0 +1,335 @@
+{
+    "__main__": {
+        "bacon": 0,
+        "imports": [
+            "pydriller",
+            "pydriller.domain",
+            "pydriller.domain.commit",
+            "pydriller.domain.developer",
+            "pydriller.metrics",
+            "pydriller.metrics.process",
+            "pydriller.metrics.process.change_set",
+            "pydriller.metrics.process.code_churn",
+            "pydriller.metrics.process.commits_count",
+            "pydriller.metrics.process.contributors_count",
+            "pydriller.metrics.process.contributors_experience",
+            "pydriller.metrics.process.history_complexity",
+            "pydriller.metrics.process.hunks_count",
+            "pydriller.metrics.process.lines_count",
+            "pydriller.metrics.process.process_metric",
+            "pydriller.repository",
+            "pydriller.utils",
+            "pydriller.utils.conf"
+        ],
+        "name": "__main__",
+        "path": null
+    },
+    "pydriller": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "pydriller.Repository",
+            "pydriller.domain.commit",
+            "pydriller.git",
+            "pydriller.metrics.process.change_set",
+            "pydriller.metrics.process.code_churn",
+            "pydriller.metrics.process.commits_count",
+            "pydriller.metrics.process.contributors_count",
+            "pydriller.metrics.process.contributors_experience",
+            "pydriller.metrics.process.history_complexity",
+            "pydriller.metrics.process.hunks_count",
+            "pydriller.metrics.process.lines_count",
+            "pydriller.metrics.process.process_metric",
+            "pydriller.repository",
+            "pydriller.utils.conf"
+        ],
+        "imports": [
+            "pydriller.domain",
+            "pydriller.domain.commit",
+            "pydriller.repository"
+        ],
+        "name": "pydriller",
+        "path": "/Users/vincentlin/Desktop/DS_Modulation_Clustering/pydriller/pydriller/__init__.py"
+    },
+    "pydriller.Repository": {
+        "bacon": 2,
+        "imported_by": [
+            "pydriller.metrics.process.process_metric"
+        ],
+        "imports": [
+            "pydriller",
+            "pydriller.domain",
+            "pydriller.domain.commit",
+            "pydriller.git",
+            "pydriller.utils",
+            "pydriller.utils.conf"
+        ],
+        "name": "pydriller.Repository",
+        "path": "/Users/vincentlin/Desktop/DS_Modulation_Clustering/pydriller/pydriller/Repository.py"
+    },
+    "pydriller.domain": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "pydriller",
+            "pydriller.Repository",
+            "pydriller.domain.commit",
+            "pydriller.git",
+            "pydriller.repository",
+            "pydriller.utils.conf"
+        ],
+        "name": "pydriller.domain",
+        "path": "/Users/vincentlin/Desktop/DS_Modulation_Clustering/pydriller/pydriller/domain/__init__.py"
+    },
+    "pydriller.domain.commit": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "pydriller",
+            "pydriller.Repository",
+            "pydriller.git",
+            "pydriller.repository",
+            "pydriller.utils.conf"
+        ],
+        "imports": [
+            "pydriller",
+            "pydriller.domain",
+            "pydriller.domain.developer"
+        ],
+        "name": "pydriller.domain.commit",
+        "path": "/Users/vincentlin/Desktop/DS_Modulation_Clustering/pydriller/pydriller/domain/commit.py"
+    },
+    "pydriller.domain.developer": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "pydriller.domain.commit"
+        ],
+        "name": "pydriller.domain.developer",
+        "path": "/Users/vincentlin/Desktop/DS_Modulation_Clustering/pydriller/pydriller/domain/developer.py"
+    },
+    "pydriller.git": {
+        "bacon": 2,
+        "imported_by": [
+            "pydriller.Repository",
+            "pydriller.repository"
+        ],
+        "imports": [
+            "pydriller",
+            "pydriller.domain",
+            "pydriller.domain.commit",
+            "pydriller.utils",
+            "pydriller.utils.conf"
+        ],
+        "name": "pydriller.git",
+        "path": "/Users/vincentlin/Desktop/DS_Modulation_Clustering/pydriller/pydriller/git.py"
+    },
+    "pydriller.metrics": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "pydriller.metrics.process.change_set",
+            "pydriller.metrics.process.code_churn",
+            "pydriller.metrics.process.commits_count",
+            "pydriller.metrics.process.contributors_count",
+            "pydriller.metrics.process.contributors_experience",
+            "pydriller.metrics.process.history_complexity",
+            "pydriller.metrics.process.hunks_count",
+            "pydriller.metrics.process.lines_count"
+        ],
+        "name": "pydriller.metrics",
+        "path": "/Users/vincentlin/Desktop/DS_Modulation_Clustering/pydriller/pydriller/metrics/__init__.py"
+    },
+    "pydriller.metrics.process": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "pydriller.metrics.process.change_set",
+            "pydriller.metrics.process.code_churn",
+            "pydriller.metrics.process.commits_count",
+            "pydriller.metrics.process.contributors_count",
+            "pydriller.metrics.process.contributors_experience",
+            "pydriller.metrics.process.history_complexity",
+            "pydriller.metrics.process.hunks_count",
+            "pydriller.metrics.process.lines_count"
+        ],
+        "name": "pydriller.metrics.process",
+        "path": "/Users/vincentlin/Desktop/DS_Modulation_Clustering/pydriller/pydriller/metrics/process/__init__.py"
+    },
+    "pydriller.metrics.process.change_set": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__"
+        ],
+        "imports": [
+            "pydriller",
+            "pydriller.metrics",
+            "pydriller.metrics.process",
+            "pydriller.metrics.process.process_metric"
+        ],
+        "name": "pydriller.metrics.process.change_set",
+        "path": "/Users/vincentlin/Desktop/DS_Modulation_Clustering/pydriller/pydriller/metrics/process/change_set.py"
+    },
+    "pydriller.metrics.process.code_churn": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__"
+        ],
+        "imports": [
+            "pydriller",
+            "pydriller.metrics",
+            "pydriller.metrics.process",
+            "pydriller.metrics.process.process_metric"
+        ],
+        "name": "pydriller.metrics.process.code_churn",
+        "path": "/Users/vincentlin/Desktop/DS_Modulation_Clustering/pydriller/pydriller/metrics/process/code_churn.py"
+    },
+    "pydriller.metrics.process.commits_count": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__"
+        ],
+        "imports": [
+            "pydriller",
+            "pydriller.metrics",
+            "pydriller.metrics.process",
+            "pydriller.metrics.process.process_metric"
+        ],
+        "name": "pydriller.metrics.process.commits_count",
+        "path": "/Users/vincentlin/Desktop/DS_Modulation_Clustering/pydriller/pydriller/metrics/process/commits_count.py"
+    },
+    "pydriller.metrics.process.contributors_count": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__"
+        ],
+        "imports": [
+            "pydriller",
+            "pydriller.metrics",
+            "pydriller.metrics.process",
+            "pydriller.metrics.process.process_metric"
+        ],
+        "name": "pydriller.metrics.process.contributors_count",
+        "path": "/Users/vincentlin/Desktop/DS_Modulation_Clustering/pydriller/pydriller/metrics/process/contributors_count.py"
+    },
+    "pydriller.metrics.process.contributors_experience": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__"
+        ],
+        "imports": [
+            "pydriller",
+            "pydriller.metrics",
+            "pydriller.metrics.process",
+            "pydriller.metrics.process.process_metric"
+        ],
+        "name": "pydriller.metrics.process.contributors_experience",
+        "path": "/Users/vincentlin/Desktop/DS_Modulation_Clustering/pydriller/pydriller/metrics/process/contributors_experience.py"
+    },
+    "pydriller.metrics.process.history_complexity": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__"
+        ],
+        "imports": [
+            "pydriller",
+            "pydriller.metrics",
+            "pydriller.metrics.process",
+            "pydriller.metrics.process.process_metric"
+        ],
+        "name": "pydriller.metrics.process.history_complexity",
+        "path": "/Users/vincentlin/Desktop/DS_Modulation_Clustering/pydriller/pydriller/metrics/process/history_complexity.py"
+    },
+    "pydriller.metrics.process.hunks_count": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__"
+        ],
+        "imports": [
+            "pydriller",
+            "pydriller.metrics",
+            "pydriller.metrics.process",
+            "pydriller.metrics.process.process_metric"
+        ],
+        "name": "pydriller.metrics.process.hunks_count",
+        "path": "/Users/vincentlin/Desktop/DS_Modulation_Clustering/pydriller/pydriller/metrics/process/hunks_count.py"
+    },
+    "pydriller.metrics.process.lines_count": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__"
+        ],
+        "imports": [
+            "pydriller",
+            "pydriller.metrics",
+            "pydriller.metrics.process",
+            "pydriller.metrics.process.process_metric"
+        ],
+        "name": "pydriller.metrics.process.lines_count",
+        "path": "/Users/vincentlin/Desktop/DS_Modulation_Clustering/pydriller/pydriller/metrics/process/lines_count.py"
+    },
+    "pydriller.metrics.process.process_metric": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "pydriller.metrics.process.change_set",
+            "pydriller.metrics.process.code_churn",
+            "pydriller.metrics.process.commits_count",
+            "pydriller.metrics.process.contributors_count",
+            "pydriller.metrics.process.contributors_experience",
+            "pydriller.metrics.process.history_complexity",
+            "pydriller.metrics.process.hunks_count",
+            "pydriller.metrics.process.lines_count"
+        ],
+        "imports": [
+            "pydriller",
+            "pydriller.Repository"
+        ],
+        "name": "pydriller.metrics.process.process_metric",
+        "path": "/Users/vincentlin/Desktop/DS_Modulation_Clustering/pydriller/pydriller/metrics/process/process_metric.py"
+    },
+    "pydriller.repository": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "pydriller"
+        ],
+        "imports": [
+            "pydriller",
+            "pydriller.domain",
+            "pydriller.domain.commit",
+            "pydriller.git",
+            "pydriller.utils",
+            "pydriller.utils.conf"
+        ],
+        "name": "pydriller.repository",
+        "path": "/Users/vincentlin/Desktop/DS_Modulation_Clustering/pydriller/pydriller/repository.py"
+    },
+    "pydriller.utils": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "pydriller.Repository",
+            "pydriller.git",
+            "pydriller.repository"
+        ],
+        "name": "pydriller.utils",
+        "path": "/Users/vincentlin/Desktop/DS_Modulation_Clustering/pydriller/pydriller/utils/__init__.py"
+    },
+    "pydriller.utils.conf": {
+        "bacon": 1,
+        "imported_by": [
+            "__main__",
+            "pydriller.Repository",
+            "pydriller.git",
+            "pydriller.repository"
+        ],
+        "imports": [
+            "pydriller",
+            "pydriller.domain",
+            "pydriller.domain.commit"
+        ],
+        "name": "pydriller.utils.conf",
+        "path": "/Users/vincentlin/Desktop/DS_Modulation_Clustering/pydriller/pydriller/utils/conf.py"
+    }
+}

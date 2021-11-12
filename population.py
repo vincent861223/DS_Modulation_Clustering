@@ -7,11 +7,13 @@ class Population:
         A class that describes a population of virtual individuals
     """
 
-    def __init__(self, target, size, mutation_rate, crossover_rate):
+    def __init__(self, dep_graph, size, mutation_rate, crossover_rate):
         self.population = []
         self.generations = 0
-        self.target = target
+        self.n_cluster = 1
+        self.dep_graph = dep_graph
         self.mutation_rate = mutation_rate
+        self.n_cluster_mutation_rate = 0.00001
         self.crossover_rate = crossover_rate
         self.best_ind = None
         self.finished = False
@@ -21,8 +23,8 @@ class Population:
         self.mating_pool = []
 
         for i in range(size):
-            ind = Individual(len(target))
-            ind.calc_fitness(target)
+            ind = Individual(len(dep_graph.keys()))
+            ind.calc_fitness(dep_graph)
 
             if ind.fitness > self.max_fitness:
                 self.max_fitness = ind.fitness
@@ -44,7 +46,6 @@ class Population:
         # a higher fitness = more entries to mating pool = more likely to be picked as a parent
         # a lower fitness = fewer entries to mating pool = less likely to be picked as a parent
         self.mating_pool = []
-        
 
         for i, ind in enumerate(self.population):
             prob = int(round(ind.fitness * 100))
@@ -71,11 +72,12 @@ class Population:
                 child = partner_a.crossover(partner_b)
             else: 
                 child = partner_a
-            child.mutate(self.mutation_rate)
-            child.calc_fitness(self.target)
+            child.mutate(self.mutation_rate, self.n_cluster_mutation_rate)
+            child.calc_fitness(self.dep_graph)
 
             self.average_fitness += child.fitness
             new_population.append(child)
+        
 
         self.population = new_population
         self.generations += 1

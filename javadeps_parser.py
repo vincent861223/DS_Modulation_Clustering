@@ -50,7 +50,7 @@ class Javadeps_parser:
         return allFiles
 
 if __name__ == '__main__':
-    dirName = 'DesignPatterns-master/src/patterns'
+    dirName = 'java-design-patterns/factory/src'
     jdeps_parser = Javadeps_parser()
     listOfFiles = jdeps_parser.get_java_files(dirName)
     # print(listOfFiles)
