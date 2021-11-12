@@ -70,24 +70,24 @@ class Population:
 
             if random.uniform(0, 1) < self.crossover_rate:
                 child = partner_a.crossover(partner_b)
-            else: 
+            else:
                 child = partner_a
             child.mutate(self.mutation_rate, self.n_cluster_mutation_rate)
             child.calc_fitness(self.dep_graph)
 
             self.average_fitness += child.fitness
             new_population.append(child)
-        
 
         self.population = new_population
         self.generations += 1
         self.average_fitness /= len(new_population)
     # Compute/Identify the current "most fit" individual within the population
+
     def evaluate(self):
         best_fitness = 0.0
 
         for ind in self.population:
-            if ind.fitness > best_fitness: 
+            if ind.fitness > best_fitness:
                 best_fitness = ind.fitness
                 self.best_ind = ind
 

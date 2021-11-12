@@ -21,6 +21,7 @@
             "pydriller.utils",
             "pydriller.utils.conf"
         ],
+        "imports": [],
         "name": "__main__",
         "path": null
     },
@@ -78,6 +79,7 @@
             "pydriller.repository",
             "pydriller.utils.conf"
         ],
+        "imports": [],
         "name": "pydriller.domain",
         "path": "/Users/vincentlin/Desktop/DS_Modulation_Clustering/pydriller/pydriller/domain/__init__.py"
     },
@@ -105,6 +107,7 @@
             "__main__",
             "pydriller.domain.commit"
         ],
+        "imports": [],
         "name": "pydriller.domain.developer",
         "path": "/Users/vincentlin/Desktop/DS_Modulation_Clustering/pydriller/pydriller/domain/developer.py"
     },
@@ -137,6 +140,7 @@
             "pydriller.metrics.process.hunks_count",
             "pydriller.metrics.process.lines_count"
         ],
+        "imports": [],
         "name": "pydriller.metrics",
         "path": "/Users/vincentlin/Desktop/DS_Modulation_Clustering/pydriller/pydriller/metrics/__init__.py"
     },
@@ -153,6 +157,7 @@
             "pydriller.metrics.process.hunks_count",
             "pydriller.metrics.process.lines_count"
         ],
+        "imports": [],
         "name": "pydriller.metrics.process",
         "path": "/Users/vincentlin/Desktop/DS_Modulation_Clustering/pydriller/pydriller/metrics/process/__init__.py"
     },
@@ -313,6 +318,7 @@
             "pydriller.git",
             "pydriller.repository"
         ],
+        "imports": [],
         "name": "pydriller.utils",
         "path": "/Users/vincentlin/Desktop/DS_Modulation_Clustering/pydriller/pydriller/utils/__init__.py"
     },

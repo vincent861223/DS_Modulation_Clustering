@@ -10,6 +10,7 @@ class Individual:
     """
         size: number of nodes
     """
+
     def __init__(self, n_nodes):
         self.fitness = 0
         self.n_cluster = 1
@@ -22,23 +23,52 @@ class Individual:
 
         return genes
 
-
     # Fitness function: returns a floating points of "correct" characters
+
     def calc_fitness(self, dep_graph):
-        self.fitness = 0.1
 
+        # TODO: imports is empty
+        # TODO: n_cluster
+        # TODO: eps duplicate
 
-        # score = 0
-        # index = 0
-        
-        # for gene in self.genes: 
-        #     if gene == target[index]:
-        #         score += 1
-        #     index += 1
+        # count miu_i and eps_ij
+        miu = [0] * self.n_cluster
+        eps = [[0 for _ in range(self.n_cluster)]
+               for _ in range(self.n_cluster)]
+        n = [0] * self.n_cluster
 
-        # # insert your code to calculate the individual fitness here
+        for key in dep_graph.keys():
+            key_cluster = self.genes[list(dep_graph).index(key)]
+            n[key_cluster - 1] += 1
+            for outgoing_edge in dep_graph[key]['imports']:
+                outgoing_cluster = self.genes[list(
+                    dep_graph).index(outgoing_edge)]
+                if key_cluster == outgoing_cluster:
+                    miu[key_cluster - 1] += 1
+                else:
+                    eps[key_cluster - 1][outgoing_cluster - 1] += 1
+                    eps[outgoing_cluster - 1][key_cluster - 1] += 1
 
-        # self.fitness = score / len(target)
+        # count A_i
+        cum_A = 0
+        for k in range(self.n_cluster):
+            if n[k] != 0:  # TODO: n_cluster
+                cum_A += (miu[k] / (n[k] * n[k]))
+
+        # count E_ij
+        cum_E = 0
+        for i in range(self.n_cluster):
+            for j in range(self.n_cluster):
+                if n[i] != 0 & n[j] != 0:  # TODO: n_cluster
+                    cum_E += (eps[i][j] / (2 * n[i] * n[j]))
+
+        # calculate MQ
+        if self.n_cluster == 1:
+            self.fitness = cum_A
+        else:
+            ave_A = cum_A / self.n_cluster
+            ave_E = cum_E / (self.n_cluster * (self.n_cluster - 1) / 2)
+            self.fitness = ave_A - ave_E
 
     def __repr__(self):
         return str(self.genes) + " -> fitness: " + str(self.fitness)
@@ -60,9 +90,9 @@ class Individual:
     def mutate(self, mutation_rate, n_cluster_mutation_rate):
         # code to mutate the individual here
         for i, gene in enumerate(self.genes):
-            if random.uniform(0, 1) < mutation_rate: 
+            if random.uniform(0, 1) < mutation_rate:
                 self.genes[i] = random.randint(0, self.n_cluster)
 
         # Mutatate n_cluster
-        if self.n_cluster < self.max_n_cluster and random.uniform(0, 1) < n_cluster_mutation_rate: 
-            self.n_cluster += 1 
+        if self.n_cluster < self.max_n_cluster and random.uniform(0, 1) < n_cluster_mutation_rate:
+            self.n_cluster += 1
