@@ -21,7 +21,6 @@
             "pydriller.utils",
             "pydriller.utils.conf"
         ],
-        "imports": [],
         "name": "__main__",
         "path": null
     },
