@@ -7,7 +7,7 @@ class Javadeps_parser:
     def __init__(self):
         self.allFiles = list()
         self.dependencies = defaultdict(set)
-        self.valid_imports = 'patterns'
+        self.valid_imports = 'org.mockito'
 
     def find_dependencies(self, source):
         ast = javalang.parse.parse(source)
@@ -50,7 +50,7 @@ class Javadeps_parser:
         return allFiles
 
 if __name__ == '__main__':
-    dirName = 'java-design-patterns/factory/src'
+    dirName = 'mockito/src/main/java/org/mockito'
     jdeps_parser = Javadeps_parser()
     listOfFiles = jdeps_parser.get_java_files(dirName)
     # print(listOfFiles)

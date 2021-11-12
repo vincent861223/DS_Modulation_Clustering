@@ -11,7 +11,7 @@ class Dependency_parser:
     self.externals_modules = list()
 
   def get_externals(self):
-    output = sp.getoutput('pydeps DataMiner --externals')
+    output = sp.getoutput('pydeps pydriller/pydriller/ --externals')
     for e in output.split('[')[1].split('\n'):
       if e and e != "]":
         e = e.split(',')[0].split('"')[1]
