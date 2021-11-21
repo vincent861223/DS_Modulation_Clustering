@@ -40,7 +40,8 @@ class Individual:
         for key in dep_graph.keys():
             key_cluster = self.genes[list(dep_graph).index(key)]
             n[key_cluster - 1] += 1
-            for outgoing_edge in dep_graph[key]['imports']:
+            # for outgoing_edge in dep_graph[key]['imports']:
+            for outgoing_edge in dep_graph[key].get('imports', []):
                 outgoing_cluster = self.genes[list(
                     dep_graph).index(outgoing_edge)]
                 if key_cluster == outgoing_cluster:
@@ -92,6 +93,8 @@ class Individual:
         for i, gene in enumerate(self.genes):
             if random.uniform(0, 1) < mutation_rate:
                 self.genes[i] = random.randint(0, self.n_cluster)
+                # if self.genes != self.n_cluster-1:
+                #     self.genes[i]+=1
 
         # Mutatate n_cluster
         if self.n_cluster < self.max_n_cluster and random.uniform(0, 1) < n_cluster_mutation_rate:

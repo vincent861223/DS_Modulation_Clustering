@@ -24,7 +24,8 @@ class Dependency_parser:
         for module in data:
             print(module)
             if module.split('.')[0] not in self.externals_modules and "imports" in data[module]:
-                initial_modules = data[module]["imports"]
+                # initial_modules = data[module]["imports"]
+                initial_modules = data[module].get("imports", [])
                 final_modules = []
                 for i in initial_modules:
                     if i.split('.')[0] not in self.externals_modules:
