@@ -25,9 +25,26 @@ def draw_clusters(cluster, nodes):
         # c.edges([('b0', 'b1'), ('b1', 'b2'), ('b2', 'b3')])
         c.attr(label=cluster_name)
 
+def draw_edges():
+    f = open("test.json")
+    data = json.load(f)
+    f.close()
+
+    dependency_set = set()
+    for i in data:
+        if "imported_by" not in data[i]:
+            continue
+        for to in data[i]["imported_by"]:
+            dependency_set.add((i, to))
+            
+    for p, q in dependency_set:
+        # print(p + "  ->  " + q)
+        g.edge(p, q)
+
 if __name__ == '__main__':
     read_json('output.json')
     for k, v in dependency_dict.items():
         draw_clusters(k, v)
+    draw_edges()
     g.graph_attr['rankdir'] = 'LR'
     g.view()

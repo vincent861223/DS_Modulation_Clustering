@@ -1,2 +1,5 @@
-javalang
-pydeps
+graphviz==0.18.2
+javalang==0.13.0
+pydeps==1.10.12
+six==1.16.0
+stdlib-list==0.8.0
