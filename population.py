@@ -38,6 +38,7 @@ class Population:
         print("\nPopulation " + str(self.generations))
         print("Average fitness: " + str(self.average_fitness))
         print("Best individual: " + str(self.best_ind))
+        print('Max_fitness: ', self.max_fitness)
 
     # Generate a mating pool according to the probability of each individual
     def natural_selection(self):
@@ -90,6 +91,8 @@ class Population:
             if ind.fitness > best_fitness:
                 best_fitness = ind.fitness
                 self.best_ind = ind
+
+        self.max_fitness = max(self.max_fitness, best_fitness)
 
         if best_fitness == self.perfect_score:
             self.finished = True
