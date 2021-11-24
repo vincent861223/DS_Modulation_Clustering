@@ -10,7 +10,7 @@ class Population:
     def __init__(self, dep_graph, size, mutation_rate, crossover_rate):
         self.population = []
         self.generations = 0
-        self.n_cluster = 1
+        # self.n_cluster = 1
         self.dep_graph = dep_graph
         self.mutation_rate = mutation_rate
         self.n_cluster_mutation_rate = 0.00001

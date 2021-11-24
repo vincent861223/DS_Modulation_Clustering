@@ -44,7 +44,8 @@ class Individual:
             for outgoing_edge in dep_graph[key].get('imports', []):
                 outgoing_cluster = self.genes[list(
                     dep_graph).index(outgoing_edge)]
-                if self.n_cluster == outgoing_cluster: print(self.genes)
+                if self.n_cluster == outgoing_cluster:
+                    print(self.genes)
                 if key_cluster == outgoing_cluster:
                     miu[key_cluster] += 1
                 else:
@@ -54,15 +55,17 @@ class Individual:
         # count A_i
         cum_A = 0
         for k in range(self.n_cluster):
-            if n[k] != 0:  # TODO: n_cluster
-                cum_A += (miu[k] / (n[k] * n[k]))
+            # if n[k] != 0:  # TODO: n_cluster
+            cum_A += (miu[k] / (n[k] * n[k]))
 
         # count E_ij
         cum_E = 0
         for i in range(self.n_cluster):
             for j in range(self.n_cluster):
-                if n[i] != 0 & n[j] != 0:  # TODO: n_cluster
-                    cum_E += (eps[i][j] / (2 * n[i] * n[j]))
+                # if n[i] != 0 and n[j] != 0:  # TODO: n_cluster
+                # print("in\n")
+                cum_E += (eps[i][j] / (2 * n[i] * n[j]))
+                # print("out\n")
 
         # calculate MQ
         if self.n_cluster == 1:
@@ -93,16 +96,22 @@ class Individual:
     def mutate(self, mutation_rate, n_cluster_mutation_rate):
         # code to mutate the individual here
         for i, gene in enumerate(self.genes):
-            if random.uniform(0, 1) < mutation_rate:
-                # self.genes[i] = random.randint(0, self.n_cluster)
-                # if self.genes != self.n_cluster-1:
-                #     self.genes[i]+=1
+            if self.appearMoreThanOnce(self.genes[i]):
+                if random.uniform(0, 1) < mutation_rate:
+                    self.genes[i] += 1
 
-                self.genes[i]+=1
-        
         self.n_cluster = max(self.genes) + 1
 
+    def appearMoreThanOnce(self, cluster):
+        count = 0
+        for gene in self.genes:
+            if gene == cluster:
+                count += 1
 
-        # Mutatate n_cluster
-        # if self.n_cluster < self.max_n_cluster and random.uniform(0, 1) < n_cluster_mutation_rate:
-        #     self.n_cluster += 1
+        if count == 1:
+            return False
+        elif(count <= 0):
+            print("not possible")
+            return False
+        else:
+            return True
