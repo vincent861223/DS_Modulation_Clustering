@@ -17,9 +17,12 @@ class Individual:
         self.max_n_cluster = 10
         self.genes = self.generate_random_genes(n_nodes)
 
-    @staticmethod
-    def generate_random_genes(n_nodes):
-        genes = [0] * n_nodes
+    def generate_random_genes(self, n_nodes):
+        # genes = [0] * n_nodes
+        genes = []
+
+        for i in range(n_nodes):
+            genes.append(random.randint(0, self.n_cluster - 1))
 
         return genes
 
@@ -55,16 +58,16 @@ class Individual:
         # count A_i
         cum_A = 0
         for k in range(self.n_cluster):
-            # if n[k] != 0:  # TODO: n_cluster
-            cum_A += (miu[k] / (n[k] * n[k]))
+            if n[k] != 0:  # TODO: n_cluster
+                cum_A += (miu[k] / (n[k] * n[k]))
 
         # count E_ij
         cum_E = 0
         for i in range(self.n_cluster):
             for j in range(self.n_cluster):
-                # if n[i] != 0 and n[j] != 0:  # TODO: n_cluster
+                if n[i] != 0 and n[j] != 0:  # TODO: n_cluster
                 # print("in\n")
-                cum_E += (eps[i][j] / (2 * n[i] * n[j]))
+                    cum_E += (eps[i][j] / (2 * n[i] * n[j]))
                 # print("out\n")
 
         # calculate MQ
@@ -96,11 +99,20 @@ class Individual:
     def mutate(self, mutation_rate, n_cluster_mutation_rate):
         # code to mutate the individual here
         for i, gene in enumerate(self.genes):
-            if self.appearMoreThanOnce(self.genes[i]):
-                if random.uniform(0, 1) < mutation_rate:
-                    self.genes[i] += 1
+            if random.uniform(0, 1) < mutation_rate:
+                self.genes[i] += 1
+        self.genes = self.resetClusterIndex(self.genes) 
+
 
         self.n_cluster = max(self.genes) + 1
+
+    def resetClusterIndex(self, cluster):
+        indexes = set(cluster)
+        idxMap = { k:i for i, k in enumerate(indexes)}
+        newCluster = []
+        for c in cluster:
+            newCluster.append(idxMap[c])
+        return newCluster
 
     def appearMoreThanOnce(self, cluster):
         count = 0
