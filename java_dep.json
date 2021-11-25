@@ -1,0 +1,1108 @@
+{
+    "org.mockito.invocation": {
+        "imports": [
+            "org.mockito.MockitoFramework",
+            "org.mockito.NotExtensible",
+            "org.mockito.mock.MockCreationSettings",
+            "org.mockito.MockSettings",
+            "org.mockito.ArgumentMatcher"
+        ]
+    },
+    "org.mockito.hamcrest": {
+        "imports": [
+            "org.mockito.internal.hamcrest.MatcherGenericTypeExtractor.genericTypeOfMatcher",
+            "org.mockito.internal.hamcrest.HamcrestArgumentMatcher",
+            "org.mockito.internal.progress.ThreadSafeMockingProgress.mockingProgress",
+            "org.mockito.internal.util.Primitives.defaultValue",
+            "org.mockito.ArgumentMatcher"
+        ]
+    },
+    "org.mockito.configuration": {
+        "imports": [
+            "org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues",
+            "org.mockito.stubbing.Answer"
+        ]
+    },
+    "org.mockito": {
+        "imports": [
+            "org.mockito.quality.MockitoHint",
+            "org.mockito.stubbing.Answer3",
+            "org.mockito.internal.matchers.GreaterOrEqual",
+            "org.mockito.plugins.MockitoPlugins",
+            "org.mockito.internal.verification.VerificationModeFactory",
+            "org.mockito.internal.stubbing.defaultanswers.TriesToReturnSelf",
+            "org.mockito.plugins.MockMaker",
+            "org.mockito.Mockito.times",
+            "org.mockito.internal.stubbing.defaultanswers.ReturnsDeepStubs",
+            "org.mockito.listeners.VerificationStartedListener",
+            "org.mockito.listeners.MockitoListener",
+            "org.mockito.junit.MockitoJUnitRunner",
+            "org.mockito.internal.stubbing.answers.AnswerFunctionalInterfaces.toAnswer",
+            "org.mockito.internal.stubbing.defaultanswers.ForwardsInvocations",
+            "org.mockito.stubbing.Stubbing",
+            "org.mockito.listeners.VerificationStartedEvent",
+            "org.mockito.listeners.StubbingLookupListener",
+            "org.mockito.plugins.AnnotationEngine",
+            "org.mockito.internal.matchers.Contains",
+            "org.mockito.stubbing.VoidAnswer2",
+            "org.mockito.internal.matchers.NotNull",
+            "org.mockito.internal.matchers.Equals",
+            "org.mockito.stubbing.Answer4",
+            "org.mockito.stubbing.VoidAnswer1",
+            "org.mockito.internal.framework.DefaultMockitoFramework",
+            "org.mockito.stubbing.VoidAnswer3",
+            "org.mockito.invocation.InvocationFactory",
+            "org.mockito.verification",
+            "org.mockito.internal.util.StringUtil.join",
+            "org.mockito.session.MockitoSessionBuilder",
+            "org.mockito.internal.matchers.GreaterThan",
+            "org.mockito.internal.matchers.InstanceOf",
+            "org.mockito.internal.stubbing.defaultanswers.ReturnsMocks",
+            "org.mockito.exceptions.misusing.RedundantListenerException",
+            "org.mockito.internal.stubbing.answers.AnswersWithDelay",
+            "org.mockito.internal.matchers.LessOrEqual",
+            "org.mockito.internal.stubbing.answers.ReturnsArgumentAt",
+            "org.mockito.stubbing.Answer5",
+            "org.mockito.junit.MockitoJUnit",
+            "org.mockito.internal.creation.MockSettingsImpl",
+            "org.mockito.junit.MockitoRule",
+            "org.mockito.mock.MockCreationSettings",
+            "org.mockito.internal.matchers.CapturingMatcher",
+            "org.mockito.exceptions.misusing.UnnecessaryStubbingException",
+            "org.mockito.internal.util.Primitives.defaultValue",
+            "org.mockito.invocation.MockHandler",
+            "org.mockito.internal.matchers.Null",
+            "org.mockito.stubbing.VoidAnswer6",
+            "org.mockito.internal.matchers.CompareEqual",
+            "org.mockito.stubbing.Stubber",
+            "org.mockito.invocation.InvocationOnMock",
+            "org.mockito.internal.progress.ThreadSafeMockingProgress.mockingProgress",
+            "org.mockito.stubbing.VoidAnswer4",
+            "org.mockito.internal.stubbing.answers.CallsRealMethods",
+            "org.mockito.stubbing.Answer2",
+            "org.mockito.verification.VerificationMode",
+            "org.mockito.internal.session.DefaultMockitoSessionBuilder",
+            "org.mockito.stubbing.Answer",
+            "org.mockito.stubbing.OngoingStubbing",
+            "org.mockito.internal.matchers.EndsWith",
+            "org.mockito.internal.matchers.Same",
+            "org.mockito.internal.matchers.apachecommons.ReflectionEquals",
+            "org.mockito.internal.matchers.Find",
+            "org.mockito.listeners.InvocationListener",
+            "org.mockito.internal.matchers.StartsWith",
+            "org.mockito.internal.configuration.GlobalConfiguration",
+            "org.mockito.internal.stubbing.defaultanswers.GloballyConfiguredAnswer",
+            "org.mockito.quality.Strictness",
+            "org.mockito.invocation.Invocation",
+            "org.mockito.exceptions.base.MockitoException",
+            "org.mockito.internal.matchers.EqualsWithDelta",
+            "org.mockito.stubbing.VoidAnswer5",
+            "org.mockito.internal.matchers.LessThan",
+            "org.mockito.internal.stubbing.defaultanswers.ReturnsSmartNulls",
+            "org.mockito.exceptions.misusing.UnfinishedMockingSessionException",
+            "org.mockito.stubbing.Answer1",
+            "org.mockito.internal.stubbing.answers.ReturnsElementsOf",
+            "org.mockito.internal.matchers.Matches",
+            "org.mockito.internal.matchers.Any",
+            "org.mockito.session.MockitoSessionLogger",
+            "org.mockito.internal.MockitoCore",
+            "org.mockito.stubbing.LenientStubber",
+            "org.mockito.mock.SerializableMode",
+            "org.mockito.internal.util.Primitives",
+            "org.mockito.internal.matchers.ArrayEquals",
+            "org.mockito.exceptions.misusing.PotentialStubbingProblem",
+            "org.mockito.stubbing.Answer6"
+        ]
+    },
+    "org.mockito.quality": {
+        "imports": [
+            "org.mockito.junit.MockitoJUnit",
+            "org.mockito.MockitoSession",
+            "org.mockito.junit.MockitoRule",
+            "org.mockito.exceptions.misusing.UnnecessaryStubbingException",
+            "org.mockito.internal.junit.JUnitRule",
+            "org.mockito.exceptions.misusing.PotentialStubbingProblem",
+            "org.mockito.junit.MockitoJUnitRunner"
+        ]
+    },
+    "org.mockito.junit": {
+        "imports": [
+            "org.mockito.internal.configuration.plugins.Plugins",
+            "org.mockito.quality.MockitoHint",
+            "org.mockito.internal.junit.VerificationCollectorImpl",
+            "org.mockito.MockitoSession",
+            "org.mockito.internal.runners.InternalRunner",
+            "org.mockito.internal.runners.RunnerFactory",
+            "org.mockito.quality.Strictness",
+            "org.mockito.exceptions.base.MockitoAssertionError",
+            "org.mockito.Mock",
+            "org.mockito.MockSettings",
+            "org.mockito.internal.junit.JUnitRule",
+            "org.mockito.Mockito",
+            "org.mockito.exceptions.misusing.UnnecessaryStubbingException",
+            "org.mockito.internal.runners.StrictRunner",
+            "org.mockito.exceptions.misusing.PotentialStubbingProblem",
+            "org.mockito.MockitoAnnotations",
+            "org.mockito.internal.junit.JUnitTestRule"
+        ]
+    },
+    "org.mockito.plugins": {
+        "imports": [
+            "org.mockito.creation.instance.Instantiator",
+            "org.mockito.MockitoFramework",
+            "org.mockito.exceptions.stacktrace.StackTraceCleaner",
+            "org.mockito.mock.MockCreationSettings",
+            "org.mockito.Mockito",
+            "org.mockito.invocation.MockHandler",
+            "org.mockito.MockedConstruction",
+            "org.mockito.internal.util.StringUtil.join",
+            "org.mockito.exceptions.base.MockitoException"
+        ]
+    },
+    "org.mockito.mock": {
+        "imports": [
+            "org.mockito.stubbing.Answer",
+            "org.mockito.NotExtensible",
+            "org.mockito.quality.Strictness",
+            "org.mockito.MockSettings",
+            "org.mockito.listeners.VerificationStartedListener",
+            "org.mockito.listeners.InvocationListener",
+            "org.mockito.listeners.StubbingLookupListener"
+        ]
+    },
+    "org.mockito.internal.invocation": {
+        "imports": [
+            "org.mockito.internal.invocation.MatcherApplicationStrategy.MatcherApplicationType.ONE_MATCHER_PER_ARGUMENT",
+            "org.mockito.internal.util.collections.ListUtil",
+            "org.mockito.internal.reporting.PrintSettings",
+            "org.mockito.internal.invocation.MatcherApplicationStrategy.MatcherApplicationType.ERROR_UNSUPPORTED_NUMBER_OF_MATCHERS",
+            "org.mockito.internal.invocation.mockref.MockWeakReference",
+            "org.mockito.internal.matchers.VarargMatcher",
+            "org.mockito.internal.util.collections.ListUtil.Filter",
+            "org.mockito.invocation.InvocationFactory",
+            "org.mockito.invocation.InvocationOnMock",
+            "org.mockito.internal.matchers.CapturesArguments",
+            "org.mockito.ArgumentMatcher",
+            "org.mockito.internal.invocation.ArgumentsProcessor.argumentsToMatchers",
+            "org.mockito.internal.matchers.LocalizedMatcher",
+            "org.mockito.internal.creation.DelegatingMethod",
+            "org.mockito.internal.invocation.MatcherApplicationStrategy.getMatcherApplicationStrategyFor",
+            "org.mockito.internal.verification.api.InOrderContext",
+            "org.mockito.invocation.DescribedInvocation",
+            "org.mockito.internal.invocation.mockref.MockReference",
+            "org.mockito.internal.exceptions.Reporter.invalidUseOfMatchers",
+            "org.mockito.internal.exceptions.Reporter.cannotCallAbstractRealMethod",
+            "org.mockito.invocation.Location",
+            "org.mockito.internal.progress.SequenceNumber",
+            "org.mockito.internal.debugging.LocationImpl",
+            "org.mockito.mock.MockCreationSettings",
+            "org.mockito.internal.matchers.CapturingMatcher",
+            "org.mockito.internal.invocation.TypeSafeMatching.matchesTypeSafe",
+            "org.mockito.internal.progress.ArgumentMatcherStorage",
+            "org.mockito.invocation.MatchableInvocation",
+            "org.mockito.internal.invocation.MatcherApplicationStrategy.MatcherApplicationType.MATCH_EACH_VARARGS_WITH_LAST_MATCHER",
+            "org.mockito.internal.exceptions.VerificationAwareInvocation",
+            "org.mockito.invocation.Invocation",
+            "org.mockito.internal.hamcrest.HamcrestArgumentMatcher",
+            "org.mockito.invocation.StubInfo",
+            "org.mockito.internal.creation.SuspendMethod",
+            "org.mockito.internal.matchers.ArrayEquals",
+            "org.mockito.internal.exceptions.stacktrace.ConditionalStackTraceFilter",
+            "org.mockito.internal.matchers.Equals",
+            "org.mockito.exceptions.base.MockitoException"
+        ]
+    },
+    "org.mockito.internal.invocation.finder": {
+        "imports": [
+            "org.mockito.internal.util.DefaultMockingDetails",
+            "org.mockito.internal.util.collections.ListUtil",
+            "org.mockito.invocation.Invocation",
+            "org.mockito.stubbing.Stubbing",
+            "org.mockito.internal.util.collections.ListUtil.Filter",
+            "org.mockito.internal.stubbing.StubbingComparator",
+            "org.mockito.internal.invocation.InvocationComparator"
+        ]
+    },
+    "org.mockito.internal.handler": {
+        "imports": [
+            "org.mockito.internal.matchers.Equality.areEqual",
+            "org.mockito.internal.listeners.StubbingLookupNotifier.notifyStubbedAnswerLookup",
+            "org.mockito.internal.stubbing.OngoingStubbingImpl",
+            "org.mockito.internal.progress.ThreadSafeMockingProgress.mockingProgress",
+            "org.mockito.internal.invocation.MatchersBinder",
+            "org.mockito.verification.VerificationMode",
+            "org.mockito.internal.creation.settings.CreationSettings",
+            "org.mockito.internal.exceptions.Reporter.invocationListenerThrewException",
+            "org.mockito.invocation.DescribedInvocation",
+            "org.mockito.internal.verification.MockAwareVerificationMode",
+            "org.mockito.internal.stubbing.answers.DefaultAnswerValidator",
+            "org.mockito.mock.MockCreationSettings",
+            "org.mockito.internal.invocation.InvocationMatcher",
+            "org.mockito.internal.stubbing.StubbedInvocationMatcher",
+            "org.mockito.internal.stubbing.InvocationContainerImpl",
+            "org.mockito.listeners.InvocationListener",
+            "org.mockito.internal.verification.VerificationDataImpl",
+            "org.mockito.internal.util.Primitives.defaultValue",
+            "org.mockito.invocation.Invocation",
+            "org.mockito.internal.util.MockUtil",
+            "org.mockito.invocation.MockHandler",
+            "org.mockito.listeners.MethodInvocationReport",
+            "org.mockito.invocation.InvocationContainer"
+        ]
+    },
+    "org.mockito.internal.hamcrest": {
+        "imports": [
+            "org.mockito.ArgumentMatcher",
+            "org.mockito.internal.util.reflection.GenericTypeExtractor.genericTypeOf",
+            "org.mockito.internal.matchers.VarargMatcher"
+        ]
+    },
+    "org.mockito.internal.reporting": {
+        "imports": [
+            "org.mockito.internal.matchers.text.MatchersPrinter",
+            "org.mockito.invocation.Invocation",
+            "org.mockito.internal.util.MockUtil",
+            "org.mockito.invocation.MatchableInvocation",
+            "org.mockito.ArgumentMatcher"
+        ]
+    },
+    "org.mockito.internal.configuration": {
+        "imports": [
+            "org.mockito.MockitoAnnotations",
+            "org.mockito.internal.exceptions.Reporter.moreThanOneAnnotationNotAllowed",
+            "org.mockito.internal.configuration.injection.scanner.MockScanner",
+            "org.mockito.internal.util.StringUtil.join",
+            "org.mockito.internal.configuration.injection.scanner.InjectMocksScanner",
+            "org.mockito.configuration.DefaultMockitoConfiguration",
+            "org.mockito.internal.configuration.plugins.Plugins",
+            "org.mockito.stubbing.Answer",
+            "org.mockito.Mockito",
+            "org.mockito.plugins.MockMaker",
+            "org.mockito.MockedConstruction",
+            "org.mockito.ScopedMock",
+            "org.mockito.Mockito.CALLS_REAL_METHODS",
+            "org.mockito.internal.util.Supplier",
+            "org.mockito.internal.exceptions.Reporter.unsupportedCombinationOfAnnotations",
+            "org.mockito.internal.util.reflection.GenericMaster",
+            "org.mockito.Captor",
+            "org.mockito.internal.util.collections.Sets.newMockSafeHashSet",
+            "org.mockito.Mockito.withSettings",
+            "org.mockito.MockSettings",
+            "org.mockito.plugins.AnnotationEngine",
+            "org.mockito.exceptions.misusing.MockitoConfigurationException",
+            "org.mockito.plugins.DoNotMockEnforcer",
+            "org.mockito.MockedStatic",
+            "org.mockito.ArgumentCaptor",
+            "org.mockito.internal.configuration.injection.MockInjection",
+            "org.mockito.internal.util.MockUtil",
+            "org.mockito.configuration.IMockitoConfiguration",
+            "org.mockito.plugins.MemberAccessor",
+            "org.mockito.Spy",
+            "org.mockito.Mock",
+            "org.mockito.DoNotMock",
+            "org.mockito.exceptions.base.MockitoException",
+            "org.mockito.InjectMocks"
+        ]
+    },
+    "org.mockito.internal.configuration.plugins": {
+        "imports": [
+            "org.mockito.plugins.StackTraceCleanerProvider",
+            "org.mockito.internal.util.collections.Iterables",
+            "org.mockito.plugins.MockitoLogger",
+            "org.mockito.plugins.PluginSwitch",
+            "org.mockito.plugins.InstantiatorProvider2",
+            "org.mockito.plugins.MockResolver",
+            "org.mockito.internal.util.io.IOUtil",
+            "org.mockito.plugins.MockMaker",
+            "org.mockito.plugins.MockitoPlugins",
+            "org.mockito.plugins.MemberAccessor",
+            "org.mockito.plugins.AnnotationEngine",
+            "org.mockito.DoNotMock",
+            "org.mockito.exceptions.base.MockitoException",
+            "org.mockito.plugins.DoNotMockEnforcer"
+        ]
+    },
+    "org.mockito.internal.configuration.injection": {
+        "imports": [
+            "org.mockito.internal.util.reflection.SuperTypesLastSorter.sortSuperTypesLast",
+            "org.mockito.internal.util.collections.ListUtil",
+            "org.mockito.internal.util.Checks.checkNotNull",
+            "org.mockito.internal.util.reflection.FieldInitializationReport",
+            "org.mockito.internal.configuration.injection.filter.MockCandidateFilter",
+            "org.mockito.internal.configuration.plugins.Plugins",
+            "org.mockito.internal.util.reflection.FieldInitializer",
+            "org.mockito.Mockito",
+            "org.mockito.internal.configuration.injection.filter.NameBasedCandidateFilter",
+            "org.mockito.Mockito.withSettings",
+            "org.mockito.internal.util.collections.Sets.newMockSafeHashSet",
+            "org.mockito.internal.util.reflection.FieldReader",
+            "org.mockito.internal.configuration.injection.filter.TerminalMockCandidateFilter",
+            "org.mockito.internal.configuration.injection.filter.TypeBasedCandidateFilter",
+            "org.mockito.internal.exceptions.Reporter.cannotInitializeForInjectMocksAnnotation",
+            "org.mockito.internal.exceptions.Reporter.fieldInitialisationThrewException",
+            "org.mockito.internal.util.Checks.checkItemsNotNull",
+            "org.mockito.internal.util.MockUtil",
+            "org.mockito.plugins.MemberAccessor",
+            "org.mockito.internal.util.reflection.FieldInitializer.ConstructorArgumentResolver",
+            "org.mockito.Spy",
+            "org.mockito.exceptions.base.MockitoException"
+        ]
+    },
+    "org.mockito.internal.configuration.injection.filter": {
+        "imports": [
+            "org.mockito.internal.exceptions.Reporter.cannotInjectDependency",
+            "org.mockito.internal.configuration.plugins.Plugins",
+            "org.mockito.internal.util.reflection.BeanPropertySetter",
+            "org.mockito.plugins.MemberAccessor",
+            "org.mockito.internal.util.MockUtil.getMockName"
+        ]
+    },
+    "org.mockito.internal.configuration.injection.scanner": {
+        "imports": [
+            "org.mockito.internal.exceptions.Reporter.unsupportedCombinationOfAnnotations",
+            "org.mockito.Captor",
+            "org.mockito.internal.util.collections.Sets.newMockSafeHashSet",
+            "org.mockito.internal.util.MockUtil",
+            "org.mockito.internal.util.reflection.FieldReader",
+            "org.mockito.Spy",
+            "org.mockito.Mock",
+            "org.mockito.InjectMocks"
+        ]
+    },
+    "org.mockito.internal.progress": {
+        "imports": [
+            "org.mockito.internal.exceptions.Reporter.unfinishedStubbing",
+            "org.mockito.internal.matchers.Not",
+            "org.mockito.internal.matchers.And",
+            "org.mockito.verification.VerificationMode",
+            "org.mockito.ArgumentMatcher",
+            "org.mockito.internal.matchers.LocalizedMatcher",
+            "org.mockito.verification.VerificationStrategy",
+            "org.mockito.stubbing.OngoingStubbing",
+            "org.mockito.listeners.MockitoListener",
+            "org.mockito.invocation.Location",
+            "org.mockito.internal.exceptions.Reporter.misplacedArgumentMatcher",
+            "org.mockito.internal.exceptions.Reporter.incorrectUseOfAdditionalMatchers",
+            "org.mockito.internal.debugging.LocationImpl",
+            "org.mockito.internal.matchers.Or",
+            "org.mockito.mock.MockCreationSettings",
+            "org.mockito.internal.listeners.AutoCleanableListener",
+            "org.mockito.internal.exceptions.Reporter.unfinishedVerificationException",
+            "org.mockito.listeners.VerificationListener",
+            "org.mockito.internal.configuration.GlobalConfiguration",
+            "org.mockito.internal.debugging.Localized",
+            "org.mockito.listeners.MockCreationListener",
+            "org.mockito.internal.exceptions.Reporter",
+            "org.mockito.internal.exceptions.Reporter.reportNoSubMatchersFound"
+        ]
+    },
+    "org.mockito.internal.util": {
+        "imports": [
+            "org.mockito.plugins.MockMaker.TypeMockability",
+            "org.mockito.plugins.MockResolver",
+            "org.mockito.invocation.InvocationOnMock",
+            "org.mockito.internal.handler.MockHandlerFactory.createMockHandler",
+            "org.mockito.internal.util.StringUtil.join",
+            "org.mockito.internal.configuration.plugins.Plugins",
+            "org.mockito.plugins.MockitoLogger",
+            "org.mockito.internal.creation.DelegatingMethod",
+            "org.mockito.internal.creation.settings.CreationSettings",
+            "org.mockito.internal.debugging.InvocationsPrinter",
+            "org.mockito.Mockito",
+            "org.mockito.plugins.MockMaker",
+            "org.mockito.MockedConstruction",
+            "org.mockito.internal.exceptions.Reporter.usingConstructorWithFancySerializable",
+            "org.mockito.internal.exceptions.Reporter.cannotCreateTimerWithNegativeDurationTime",
+            "org.mockito.internal.exceptions.Reporter.mockedTypeIsInconsistentWithSpiedInstanceType",
+            "org.mockito.internal.stubbing.answers.InvocationInfo",
+            "org.mockito.creation.instance.InstantiationException",
+            "org.mockito.internal.util.reflection.LenientCopyTool",
+            "org.mockito.internal.exceptions.Reporter.mockedTypeIsInconsistentWithDelegatedInstanceType",
+            "org.mockito.stubbing.Stubbing",
+            "org.mockito.mock.MockCreationSettings",
+            "org.mockito.internal.stubbing.InvocationContainerImpl",
+            "org.mockito.internal.exceptions.Reporter.extraInterfacesCannotContainMockedType",
+            "org.mockito.MockingDetails",
+            "org.mockito.internal.exceptions.Reporter.cannotMockClass",
+            "org.mockito.exceptions.misusing.NotAMockException",
+            "org.mockito.invocation.Invocation",
+            "org.mockito.mock.SerializableMode",
+            "org.mockito.internal.invocation.MockitoMethod",
+            "org.mockito.invocation.MockHandler",
+            "org.mockito.mock.MockName",
+            "org.mockito.internal.exceptions.Reporter"
+        ]
+    },
+    "org.mockito.internal.util.io": {
+        "imports": [
+            "org.mockito.exceptions.base.MockitoException"
+        ]
+    },
+    "org.mockito.internal.util.collections": {
+        "imports": [
+            "org.mockito.internal.util.MockUtil",
+            "org.mockito.internal.util.Checks"
+        ]
+    },
+    "org.mockito.internal.util.reflection": {
+        "imports": [
+            "org.mockito.internal.configuration.plugins.Plugins",
+            "org.mockito.internal.util.collections.ListUtil",
+            "org.mockito.internal.SuppressSignatureCheck",
+            "org.mockito.internal.util.collections.ListUtil.Filter",
+            "org.mockito.internal.util.MockUtil",
+            "org.mockito.plugins.MemberAccessor",
+            "org.mockito.exceptions.base.MockitoInitializationException",
+            "org.mockito.internal.util.Checks",
+            "org.mockito.internal.util.StringUtil.join",
+            "org.mockito.exceptions.base.MockitoException"
+        ]
+    },
+    "org.mockito.internal.framework": {
+        "imports": [
+            "org.mockito.invocation.InvocationFactory",
+            "org.mockito.internal.progress.ThreadSafeMockingProgress.mockingProgress",
+            "org.mockito.internal.junit.TestFinishedEvent",
+            "org.mockito.plugins.MockitoPlugins",
+            "org.mockito.internal.configuration.plugins.Plugins",
+            "org.mockito.plugins.MockitoLogger",
+            "org.mockito.MockitoFramework",
+            "org.mockito.internal.invocation.DefaultInvocationFactory",
+            "org.mockito.internal.junit.UniversalTestListener",
+            "org.mockito.Mockito",
+            "org.mockito.plugins.MockMaker",
+            "org.mockito.listeners.MockitoListener",
+            "org.mockito.exceptions.misusing.RedundantListenerException",
+            "org.mockito.MockitoSession",
+            "org.mockito.plugins.InlineMockMaker",
+            "org.mockito.quality.Strictness",
+            "org.mockito.internal.exceptions.Reporter",
+            "org.mockito.internal.util.Checks",
+            "org.mockito.MockitoAnnotations",
+            "org.mockito.exceptions.base.MockitoException"
+        ]
+    },
+    "org.mockito.internal.junit": {
+        "imports": [
+            "org.mockito.internal.invocation.finder.AllInvocationsFinder",
+            "org.mockito.internal.progress.MockingProgressImpl",
+            "org.mockito.internal.util.collections.ListUtil.Filter",
+            "org.mockito.internal.progress.ThreadSafeMockingProgress.mockingProgress",
+            "org.mockito.internal.verification.api.VerificationData",
+            "org.mockito.verification.VerificationMode",
+            "org.mockito.internal.util.collections.ListUtil.filter",
+            "org.mockito.plugins.MockitoLogger",
+            "org.mockito.internal.creation.settings.CreationSettings",
+            "org.mockito.verification.VerificationStrategy",
+            "org.mockito.exceptions.base.MockitoAssertionError",
+            "org.mockito.Mockito",
+            "org.mockito.exceptions.verification.ArgumentsAreDifferent",
+            "org.mockito.MockitoSession",
+            "org.mockito.junit.MockitoRule",
+            "org.mockito.stubbing.Stubbing",
+            "org.mockito.junit.VerificationCollector",
+            "org.mockito.mock.MockCreationSettings",
+            "org.mockito.junit.MockitoTestRule",
+            "org.mockito.internal.listeners.AutoCleanableListener",
+            "org.mockito.internal.stubbing.UnusedStubbingReporting",
+            "org.mockito.listeners.StubbingLookupListener",
+            "org.mockito.listeners.StubbingLookupEvent",
+            "org.mockito.internal.session.MockitoSessionLoggerAdapter",
+            "org.mockito.invocation.Invocation",
+            "org.mockito.quality.Strictness",
+            "org.mockito.internal.stubbing.StrictnessSelector.determineStrictness",
+            "org.mockito.listeners.MockCreationListener",
+            "org.mockito.internal.exceptions.Reporter",
+            "org.mockito.MockitoAnnotations"
+        ]
+    },
+    "org.mockito.internal.debugging": {
+        "imports": [
+            "org.mockito.invocation.Location",
+            "org.mockito.internal.util.collections.ListUtil",
+            "org.mockito.internal.exceptions.stacktrace.StackTraceFilter",
+            "org.mockito.stubbing.Stubbing",
+            "org.mockito.invocation.Invocation",
+            "org.mockito.internal.invocation.InvocationMatcher",
+            "org.mockito.Mockito",
+            "org.mockito.invocation.DescribedInvocation",
+            "org.mockito.listeners.InvocationListener",
+            "org.mockito.listeners.MethodInvocationReport",
+            "org.mockito.internal.util.StringUtil.join"
+        ]
+    },
+    "org.mockito.internal": {
+        "imports": [
+            "org.mockito.internal.stubbing.OngoingStubbingImpl",
+            "org.mockito.internal.exceptions.Reporter.notAMockPassedToVerifyNoMoreInteractions",
+            "org.mockito.internal.exceptions.Reporter.notAMockPassedWhenCreatingInOrder",
+            "org.mockito.internal.util.MockUtil.resetMock",
+            "org.mockito.stubbing.Stubber",
+            "org.mockito.internal.progress.ThreadSafeMockingProgress.mockingProgress",
+            "org.mockito.internal.verification.VerificationModeFactory.noInteractions",
+            "org.mockito.verification.VerificationMode",
+            "org.mockito.internal.util.StringUtil.join",
+            "org.mockito.internal.exceptions.Reporter.mocksHaveToBePassedToVerifyNoMoreInteractions",
+            "org.mockito.internal.verification.VerificationModeFactory",
+            "org.mockito.internal.configuration.plugins.Plugins",
+            "org.mockito.internal.verification.api.VerificationDataInOrder",
+            "org.mockito.internal.exceptions.Reporter.inOrderRequiresFamiliarMock",
+            "org.mockito.internal.util.MockUtil.createStaticMock",
+            "org.mockito.internal.util.MockUtil.getMockHandler",
+            "org.mockito.internal.exceptions.Reporter.mocksHaveToBePassedWhenCreatingInOrder",
+            "org.mockito.exceptions.base.MockitoAssertionError",
+            "org.mockito.internal.verification.VerificationWrapper",
+            "org.mockito.internal.verification.VerificationModeFactory.noMoreInteractions",
+            "org.mockito.internal.verification.api.VerificationInOrderMode",
+            "org.mockito.internal.verification.api.InOrderContext",
+            "org.mockito.plugins.MockMaker",
+            "org.mockito.MockedConstruction",
+            "org.mockito.internal.exceptions.Reporter.notAMockPassedToVerify",
+            "org.mockito.stubbing.OngoingStubbing",
+            "org.mockito.Mockito",
+            "org.mockito.internal.stubbing.StubberImpl",
+            "org.mockito.internal.util.MockUtil.getInvocationContainer",
+            "org.mockito.exceptions.misusing.DoNotMockException",
+            "org.mockito.internal.util.DefaultMockingDetails",
+            "org.mockito.internal.verification.MockAwareVerificationMode",
+            "org.mockito.invocation.Location",
+            "org.mockito.internal.exceptions.Reporter.nullPassedToVerifyNoMoreInteractions",
+            "org.mockito.internal.debugging.LocationImpl",
+            "org.mockito.internal.creation.MockSettingsImpl",
+            "org.mockito.internal.verification.InOrderWrapper",
+            "org.mockito.Mockito.mockingDetails",
+            "org.mockito.internal.exceptions.Reporter.nullPassedWhenCreatingInOrder",
+            "org.mockito.InOrder",
+            "org.mockito.mock.MockCreationSettings",
+            "org.mockito.MockSettings",
+            "org.mockito.internal.stubbing.InvocationContainerImpl",
+            "org.mockito.internal.util.MockUtil.createMock",
+            "org.mockito.internal.verification.VerificationDataImpl",
+            "org.mockito.internal.verification.api.VerificationDataInOrderImpl",
+            "org.mockito.stubbing.LenientStubber",
+            "org.mockito.internal.exceptions.Reporter.stubPassedToVerify",
+            "org.mockito.internal.verification.InOrderContextImpl",
+            "org.mockito.MockedStatic",
+            "org.mockito.plugins.DoNotMockEnforcer",
+            "org.mockito.internal.verification.VerificationWrapperInOrderWrapper",
+            "org.mockito.internal.invocation.finder.VerifiableInvocationsFinder",
+            "org.mockito.MockingDetails",
+            "org.mockito.internal.util.MockUtil.typeMockabilityOf",
+            "org.mockito.internal.util.MockUtil.createConstructionMock",
+            "org.mockito.exceptions.misusing.NotAMockException",
+            "org.mockito.internal.stubbing.DefaultLenientStubber",
+            "org.mockito.invocation.Invocation",
+            "org.mockito.internal.listeners.VerificationStartedNotifier",
+            "org.mockito.quality.Strictness",
+            "org.mockito.internal.progress.MockingProgress",
+            "org.mockito.internal.exceptions.Reporter.nullPassedToVerify",
+            "org.mockito.internal.util.MockUtil",
+            "org.mockito.invocation.MockHandler",
+            "org.mockito.internal.util.MockUtil.isMock",
+            "org.mockito.internal.exceptions.Reporter",
+            "org.mockito.internal.exceptions.Reporter.missingMethodInvocation",
+            "org.mockito.exceptions.base.MockitoException"
+        ]
+    },
+    "org.mockito.internal.exceptions": {
+        "imports": [
+            "org.mockito.invocation.InvocationOnMock",
+            "org.mockito.internal.util.StringUtil.join",
+            "org.mockito.internal.reporting.Pluralizer.pluralize",
+            "org.mockito.internal.matchers.LocalizedMatcher",
+            "org.mockito.exceptions.base.MockitoAssertionError",
+            "org.mockito.invocation.DescribedInvocation",
+            "org.mockito.exceptions.verification.NoInteractionsWanted",
+            "org.mockito.exceptions.verification.VerificationInOrderFailure",
+            "org.mockito.exceptions.verification.SmartNullPointerException",
+            "org.mockito.invocation.Location",
+            "org.mockito.exceptions.verification.WantedButNotInvoked",
+            "org.mockito.exceptions.verification.NeverWantedButInvoked",
+            "org.mockito.exceptions.verification.TooFewActualInvocations",
+            "org.mockito.internal.debugging.LocationImpl",
+            "org.mockito.listeners.InvocationListener",
+            "org.mockito.exceptions.base.MockitoInitializationException",
+            "org.mockito.internal.exceptions.util.ScenarioPrinter",
+            "org.mockito.internal.reporting.Pluralizer.were_exactly_x_interactions",
+            "org.mockito.exceptions.verification.TooManyActualInvocations",
+            "org.mockito.internal.junit.ExceptionFactory",
+            "org.mockito.exceptions.verification.MoreThanAllowedActualInvocations",
+            "org.mockito.invocation.Invocation",
+            "org.mockito.mock.SerializableMode",
+            "org.mockito.internal.util.MockUtil",
+            "org.mockito.exceptions.misusing",
+            "org.mockito.exceptions.base.MockitoException"
+        ]
+    },
+    "org.mockito.internal.exceptions.util": {
+        "imports": [
+            "org.mockito.internal.exceptions.VerificationAwareInvocation"
+        ]
+    },
+    "org.mockito.internal.exceptions.stacktrace": {
+        "imports": [
+            "org.mockito.plugins.StackTraceCleanerProvider",
+            "org.mockito.internal.configuration.plugins.Plugins",
+            "org.mockito.internal.configuration.GlobalConfiguration",
+            "org.mockito.exceptions.stacktrace.StackTraceCleaner",
+            "org.mockito.configuration.IMockitoConfiguration"
+        ]
+    },
+    "org.mockito.internal.verification": {
+        "imports": [
+            "org.mockito.internal.invocation.InvocationsFinder.findFirstUnverified",
+            "org.mockito.internal.util.collections.ListUtil",
+            "org.mockito.internal.util.collections.ListUtil.Filter",
+            "org.mockito.internal.verification.api.VerificationData",
+            "org.mockito.internal.exceptions.Reporter.wantedAtMostX",
+            "org.mockito.verification.VerificationMode",
+            "org.mockito.verification.VerificationEvent",
+            "org.mockito.internal.verification.api.VerificationDataInOrder",
+            "org.mockito.exceptions.base.MockitoAssertionError",
+            "org.mockito.internal.verification.api.VerificationInOrderMode",
+            "org.mockito.internal.verification.api.InOrderContext",
+            "org.mockito.internal.invocation.InvocationsFinder.findFirstUnverifiedInOrder",
+            "org.mockito.internal.verification.checkers.NumberOfInvocationsChecker.checkNumberOfInvocations",
+            "org.mockito.internal.verification.checkers.MissingInvocationChecker.checkMissingInvocation",
+            "org.mockito.internal.invocation.InvocationsFinder.findInvocations",
+            "org.mockito.internal.exceptions.Reporter.noMoreInteractionsWanted",
+            "org.mockito.internal.verification.checkers.NumberOfInvocationsChecker.checkNumberOfInvocationsNonGreedy",
+            "org.mockito.internal.invocation.InvocationMatcher",
+            "org.mockito.internal.stubbing.InvocationContainerImpl",
+            "org.mockito.internal.util.collections.IdentitySet",
+            "org.mockito.internal.exceptions.Reporter.noMoreInteractionsWantedInOrder",
+            "org.mockito.internal.verification.api.VerificationDataInOrderImpl",
+            "org.mockito.invocation.MatchableInvocation",
+            "org.mockito.internal.invocation.InvocationMarker.markVerified",
+            "org.mockito.internal.InOrderImpl",
+            "org.mockito.internal.exceptions.Reporter.cannotVerifyToString",
+            "org.mockito.internal.util.Timer",
+            "org.mockito.listeners.VerificationListener",
+            "org.mockito.internal.exceptions.Reporter.noInteractionsWanted",
+            "org.mockito.internal.invocation.finder.VerifiableInvocationsFinder",
+            "org.mockito.internal.verification.checkers.AtLeastXNumberOfInvocationsChecker.checkAtLeastNumberOfInvocations",
+            "org.mockito.internal.exceptions.Reporter.wantedButNotInvoked",
+            "org.mockito.invocation.Invocation",
+            "org.mockito.internal.util.ObjectMethodsGuru.isToStringMethod",
+            "org.mockito.exceptions.base.MockitoException"
+        ]
+    },
+    "org.mockito.internal.verification.checkers": {
+        "imports": [
+            "org.mockito.internal.exceptions.Reporter.argumentsAreDifferent",
+            "org.mockito.internal.util.collections.ListUtil",
+            "org.mockito.internal.reporting.SmartPrinter",
+            "org.mockito.internal.exceptions.Reporter.tooManyActualInvocations",
+            "org.mockito.internal.exceptions.Reporter.neverWantedButInvoked",
+            "org.mockito.internal.invocation.InvocationsFinder.findMatchingChunk",
+            "org.mockito.internal.reporting.Discrepancy",
+            "org.mockito.internal.exceptions.Reporter.tooManyActualInvocationsInOrder",
+            "org.mockito.internal.invocation.InvocationsFinder.findAllMatchingUnverifiedChunks",
+            "org.mockito.internal.verification.api.InOrderContext",
+            "org.mockito.internal.exceptions.Reporter.wantedButNotInvokedInOrder",
+            "org.mockito.internal.invocation.InvocationsFinder.findInvocations",
+            "org.mockito.invocation.Location",
+            "org.mockito.internal.invocation.InvocationsFinder.findPreviousVerifiedInOrder",
+            "org.mockito.internal.verification.argumentmatching.ArgumentMatchingTool.getNotMatchingArgsWithSameName",
+            "org.mockito.internal.invocation.InvocationsFinder.findSimilarInvocation",
+            "org.mockito.invocation.MatchableInvocation",
+            "org.mockito.internal.invocation.InvocationMarker.markVerified",
+            "org.mockito.internal.invocation.InvocationsFinder.findFirstMatchingUnverifiedInvocation",
+            "org.mockito.internal.exceptions.Reporter.wantedButNotInvoked",
+            "org.mockito.internal.verification.argumentmatching.ArgumentMatchingTool.getSuspiciouslyNotMatchingArgsIndexes",
+            "org.mockito.invocation.Invocation",
+            "org.mockito.internal.invocation.InvocationMarker.markVerifiedInOrder",
+            "org.mockito.internal.exceptions.Reporter.tooFewActualInvocationsInOrder",
+            "org.mockito.internal.invocation.InvocationsFinder.getAllLocations",
+            "org.mockito.internal.exceptions.Reporter.tooFewActualInvocations"
+        ]
+    },
+    "org.mockito.internal.verification.argumentmatching": {
+        "imports": [
+            "org.mockito.ArgumentMatcher",
+            "org.mockito.internal.matchers.ContainsExtraTypeInfo"
+        ]
+    },
+    "org.mockito.internal.verification.api": {
+        "imports": [
+            "org.mockito.invocation.MatchableInvocation",
+            "org.mockito.invocation.Invocation"
+        ]
+    },
+    "org.mockito.internal.creation": {
+        "imports": [
+            "org.mockito.internal.util.MockNameImpl",
+            "org.mockito.internal.exceptions.Reporter.extraInterfacesRequiresAtLeastOneInterface",
+            "org.mockito.internal.util.MockCreationValidator",
+            "org.mockito.internal.debugging.VerboseMockInvocationLogger",
+            "org.mockito.internal.creation.settings.CreationSettings",
+            "org.mockito.stubbing.Answer",
+            "org.mockito.internal.exceptions.Reporter.defaultAnswerDoesNotAcceptNullParameter",
+            "org.mockito.internal.util.collections.Sets.newSet",
+            "org.mockito.listeners.VerificationStartedListener",
+            "org.mockito.internal.exceptions.Reporter.methodDoesNotAcceptParameter",
+            "org.mockito.mock.MockCreationSettings",
+            "org.mockito.MockSettings",
+            "org.mockito.listeners.InvocationListener",
+            "org.mockito.internal.exceptions.Reporter.requiresAtLeastOneListener",
+            "org.mockito.listeners.StubbingLookupListener",
+            "org.mockito.internal.invocation.MockitoMethod",
+            "org.mockito.mock.SerializableMode",
+            "org.mockito.internal.exceptions.Reporter.extraInterfacesDoesNotAcceptNullParameters",
+            "org.mockito.internal.exceptions.Reporter.extraInterfacesAcceptsOnlyInterfaces",
+            "org.mockito.mock.MockName",
+            "org.mockito.internal.util.Checks",
+            "org.mockito.exceptions.base.MockitoException"
+        ]
+    },
+    "org.mockito.internal.creation.settings": {
+        "imports": [
+            "org.mockito.stubbing.Answer",
+            "org.mockito.mock.SerializableMode",
+            "org.mockito.mock.MockCreationSettings",
+            "org.mockito.listeners.VerificationStartedListener",
+            "org.mockito.mock.MockName",
+            "org.mockito.listeners.InvocationListener",
+            "org.mockito.listeners.StubbingLookupListener"
+        ]
+    },
+    "org.mockito.internal.creation.bytebuddy": {
+        "imports": [
+            "org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.DispatcherDefaultingToRealMethod",
+            "org.mockito.internal.invocation.RealMethod",
+            "org.mockito.internal.invocation.mockref.MockWeakReference",
+            "org.mockito.internal.util.concurrent.DetachedThreadLocal",
+            "org.mockito.internal.util.StringUtil.join",
+            "org.mockito.internal.invocation.SerializableMethod",
+            "org.mockito.internal.configuration.plugins.Plugins",
+            "org.mockito.internal.invocation.DefaultInvocationFactory.createInvocation",
+            "org.mockito.internal.creation.settings.CreationSettings",
+            "org.mockito.stubbing.Answer",
+            "org.mockito.internal.creation.instance.ConstructorInstantiator",
+            "org.mockito.exceptions.base.MockitoSerializationIssue",
+            "org.mockito.internal.creation.bytebuddy.inject.MockMethodDispatcher",
+            "org.mockito.plugins.MockMaker",
+            "org.mockito.MockedConstruction",
+            "org.mockito.internal.invocation.mockref.MockReference",
+            "org.mockito.creation.instance.InstantiationException",
+            "org.mockito.internal.util.concurrent.WeakConcurrentSet",
+            "org.mockito.invocation.Location",
+            "org.mockito.internal.debugging.LocationImpl",
+            "org.mockito.mock.MockCreationSettings",
+            "org.mockito.exceptions.base.MockitoInitializationException",
+            "org.mockito.exceptions.misusing.MockitoConfigurationException",
+            "org.mockito.internal.util.Platform",
+            "org.mockito.creation.instance.Instantiator",
+            "org.mockito.internal.creation.bytebuddy.InlineBytecodeGenerator.EXCLUDES",
+            "org.mockito.codegen.InjectionBase",
+            "org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.ForWriteReplace",
+            "org.mockito.internal.SuppressSignatureCheck",
+            "org.mockito.internal.util.concurrent.WeakConcurrentMap",
+            "org.mockito.plugins.InlineMockMaker",
+            "org.mockito.mock.SerializableMode",
+            "org.mockito.internal.creation.bytebuddy.ByteBuddyCrossClassLoaderSerializationSupport.CrossClassLoaderSerializableMock",
+            "org.mockito.internal.util.MockUtil",
+            "org.mockito.invocation.MockHandler",
+            "org.mockito.internal.exceptions.stacktrace.ConditionalStackTraceFilter",
+            "org.mockito.plugins.MemberAccessor",
+            "org.mockito.mock.MockName",
+            "org.mockito.internal.exceptions.Reporter",
+            "org.mockito.exceptions.base.MockitoException"
+        ]
+    },
+    "org.mockito.internal.creation.proxy": {
+        "imports": [
+            "org.mockito.internal.invocation.SerializableMethod",
+            "org.mockito.internal.invocation.DefaultInvocationFactory.createInvocation",
+            "org.mockito.internal.util.Platform",
+            "org.mockito.internal.debugging.LocationImpl",
+            "org.mockito.internal.invocation.RealMethod",
+            "org.mockito.internal.SuppressSignatureCheck",
+            "org.mockito.mock.MockCreationSettings",
+            "org.mockito.plugins.MockMaker",
+            "org.mockito.invocation.MockHandler",
+            "org.mockito.internal.util.StringUtil.join",
+            "org.mockito.exceptions.base.MockitoException"
+        ]
+    },
+    "org.mockito.internal.creation.instance": {
+        "imports": [
+            "org.mockito.internal.configuration.plugins.Plugins",
+            "org.mockito.internal.configuration.GlobalConfiguration",
+            "org.mockito.creation.instance.Instantiator",
+            "org.mockito.plugins.InstantiatorProvider2",
+            "org.mockito.mock.MockCreationSettings",
+            "org.mockito.internal.util.Primitives",
+            "org.mockito.plugins.MemberAccessor",
+            "org.mockito.creation.instance.InstantiationException",
+            "org.mockito.internal.util.StringUtil.join"
+        ]
+    },
+    "org.mockito.internal.runners": {
+        "imports": [
+            "org.mockito.internal.junit.StrictStubsRunnerTestListener",
+            "org.mockito.internal.configuration.plugins.Plugins",
+            "org.mockito.internal.junit.NoOpTestListener",
+            "org.mockito.internal.junit.MismatchReportingTestListener",
+            "org.mockito.internal.runners.util.RunnerProvider",
+            "org.mockito.Mockito",
+            "org.mockito.internal.runners.util.TestMethodsFinder.hasTestMethods",
+            "org.mockito.internal.junit.UnnecessaryStubbingsReporter",
+            "org.mockito.internal.junit.DefaultTestFinishedEvent",
+            "org.mockito.internal.junit.MockitoTestListener",
+            "org.mockito.internal.runners.util.FailureDetector",
+            "org.mockito.MockitoAnnotations",
+            "org.mockito.internal.util.Supplier",
+            "org.mockito.exceptions.base.MockitoException"
+        ]
+    },
+    "org.mockito.internal.runners.util": {
+        "imports": [
+            "org.mockito.internal.runners.InternalRunner"
+        ]
+    },
+    "org.mockito.internal.stubbing": {
+        "imports": [
+            "org.mockito.internal.exceptions.Reporter.nullPassedToWhenMethod",
+            "org.mockito.internal.stubbing.answers.ThrowsExceptionForClassType",
+            "org.mockito.stubbing.Stubber",
+            "org.mockito.invocation.InvocationOnMock",
+            "org.mockito.internal.progress.ThreadSafeMockingProgress.mockingProgress",
+            "org.mockito.internal.stubbing.answers.CallsRealMethods",
+            "org.mockito.internal.verification.DefaultRegisteredInvocations",
+            "org.mockito.stubbing.ValidableAnswer",
+            "org.mockito.stubbing.Answer",
+            "org.mockito.internal.stubbing.answers.Returns",
+            "org.mockito.invocation.DescribedInvocation",
+            "org.mockito.stubbing.OngoingStubbing",
+            "org.mockito.internal.exceptions.Reporter.notAnException",
+            "org.mockito.internal.exceptions.Reporter.notAMockPassedToWhenMethod",
+            "org.mockito.internal.stubbing.answers.DoesNothing.doesNothing",
+            "org.mockito.internal.invocation.StubInfoImpl",
+            "org.mockito.internal.verification.RegisteredInvocations",
+            "org.mockito.internal.verification.SingleRegisteredInvocation",
+            "org.mockito.internal.exceptions.Reporter.incorrectUseOfApi",
+            "org.mockito.stubbing.Stubbing",
+            "org.mockito.mock.MockCreationSettings",
+            "org.mockito.internal.invocation.InvocationMatcher",
+            "org.mockito.internal.MockitoCore",
+            "org.mockito.stubbing.LenientStubber",
+            "org.mockito.invocation.MatchableInvocation",
+            "org.mockito.internal.invocation.InvocationComparator",
+            "org.mockito.invocation.Invocation",
+            "org.mockito.quality.Strictness",
+            "org.mockito.internal.util.MockUtil",
+            "org.mockito.internal.util.MockUtil.isMock",
+            "org.mockito.invocation.InvocationContainer",
+            "org.mockito.internal.stubbing.answers.ThrowsException"
+        ]
+    },
+    "org.mockito.internal.stubbing.answers": {
+        "imports": [
+            "org.mockito.internal.exceptions.Reporter.invalidArgumentRangeAtIdentityAnswerCreationTime",
+            "org.mockito.stubbing.VoidAnswer6",
+            "org.mockito.stubbing.Answer3",
+            "org.mockito.stubbing.VoidAnswer3",
+            "org.mockito.internal.invocation.AbstractAwareMethod",
+            "org.mockito.internal.exceptions.Reporter.cannotStubVoidMethodWithAReturnValue",
+            "org.mockito.invocation.InvocationOnMock",
+            "org.mockito.internal.exceptions.Reporter.onlyVoidMethodsCanBeSetToDoNothing",
+            "org.mockito.stubbing.VoidAnswer4",
+            "org.mockito.stubbing.Answer2",
+            "org.mockito.stubbing.ValidableAnswer",
+            "org.mockito.internal.exceptions.Reporter.wrongTypeReturnedByDefaultAnswer",
+            "org.mockito.stubbing.VoidAnswer5",
+            "org.mockito.internal.configuration.plugins.Plugins",
+            "org.mockito.stubbing.Answer",
+            "org.mockito.internal.exceptions.Reporter.checkedExceptionInvalid",
+            "org.mockito.internal.exceptions.Reporter.cannotStubWithNullThrowable",
+            "org.mockito.stubbing.Answer1",
+            "org.mockito.Answers.RETURNS_DEFAULTS",
+            "org.mockito.internal.exceptions.Reporter.cannotCallAbstractRealMethod",
+            "org.mockito.internal.util.reflection.LenientCopyTool",
+            "org.mockito.internal.exceptions.Reporter.wrongTypeOfReturnValue",
+            "org.mockito.stubbing.Answer5",
+            "org.mockito.mock.MockCreationSettings",
+            "org.mockito.internal.stubbing.defaultanswers.ReturnsEmptyValues",
+            "org.mockito.internal.exceptions.Reporter.invalidArgumentPositionRangeAtInvocationTime",
+            "org.mockito.internal.exceptions.Reporter.wrongTypeOfArgumentToReturn",
+            "org.mockito.internal.util.reflection.GenericMetadataSupport",
+            "org.mockito.creation.instance.Instantiator",
+            "org.mockito.internal.util.KotlinInlineClassUtil",
+            "org.mockito.invocation.Invocation",
+            "org.mockito.stubbing.VoidAnswer2",
+            "org.mockito.internal.util.MockUtil",
+            "org.mockito.internal.util.Primitives",
+            "org.mockito.internal.exceptions.stacktrace.ConditionalStackTraceFilter",
+            "org.mockito.stubbing.Answer6",
+            "org.mockito.stubbing.Answer4",
+            "org.mockito.exceptions.base.MockitoException",
+            "org.mockito.stubbing.VoidAnswer1"
+        ]
+    },
+    "org.mockito.internal.stubbing.defaultanswers": {
+        "imports": [
+            "org.mockito.invocation.InvocationOnMock",
+            "org.mockito.internal.configuration.plugins.Plugins",
+            "org.mockito.internal.creation.settings.CreationSettings",
+            "org.mockito.stubbing.Answer",
+            "org.mockito.Mockito",
+            "org.mockito.internal.exceptions.Reporter.delegatedMethodDoesNotExistOnDelegate",
+            "org.mockito.invocation.Location",
+            "org.mockito.internal.util.JavaEightUtil",
+            "org.mockito.internal.exceptions.Reporter.smartNullPointerException",
+            "org.mockito.internal.debugging.LocationImpl",
+            "org.mockito.Mockito.withSettings",
+            "org.mockito.internal.creation.MockSettingsImpl",
+            "org.mockito.mock.MockCreationSettings",
+            "org.mockito.MockSettings",
+            "org.mockito.internal.MockitoCore",
+            "org.mockito.internal.stubbing.InvocationContainerImpl",
+            "org.mockito.internal.stubbing.StubbedInvocationMatcher",
+            "org.mockito.internal.util.ObjectMethodsGuru.isCompareToMethod",
+            "org.mockito.internal.exceptions.Reporter.delegatedMethodHasWrongReturnType",
+            "org.mockito.internal.util.reflection.GenericMetadataSupport",
+            "org.mockito.internal.configuration.GlobalConfiguration",
+            "org.mockito.invocation.Invocation",
+            "org.mockito.internal.util.ObjectMethodsGuru.isToStringMethod",
+            "org.mockito.internal.util.MockUtil",
+            "org.mockito.configuration.IMockitoConfiguration",
+            "org.mockito.internal.util.Primitives",
+            "org.mockito.plugins.MemberAccessor",
+            "org.mockito.mock.MockName"
+        ]
+    },
+    "org.mockito.internal.matchers": {
+        "imports": [
+            "org.mockito.invocation.Location",
+            "org.mockito.internal.debugging.LocationImpl",
+            "org.mockito.internal.exceptions.Reporter.noArgumentValueWasCaptured",
+            "org.mockito.internal.util.Primitives",
+            "org.mockito.internal.matchers.text.ValuePrinter",
+            "org.mockito.ArgumentMatcher"
+        ]
+    },
+    "org.mockito.internal.matchers.apachecommons": {
+        "imports": [
+            "org.mockito.internal.configuration.plugins.Plugins",
+            "org.mockito.ArgumentMatcher",
+            "org.mockito.plugins.MemberAccessor"
+        ]
+    },
+    "org.mockito.internal.matchers.text": {
+        "imports": [
+            "org.mockito.internal.reporting.PrintSettings",
+            "org.mockito.internal.util.ObjectMethodsGuru.isToStringMethod",
+            "org.mockito.internal.util.StringUtil.decamelizeMatcherName",
+            "org.mockito.ArgumentMatcher",
+            "org.mockito.internal.matchers.ContainsExtraTypeInfo"
+        ]
+    },
+    "org.mockito.internal.listeners": {
+        "imports": [
+            "org.mockito.listeners.StubbingLookupEvent",
+            "org.mockito.MockingDetails",
+            "org.mockito.internal.creation.settings.CreationSettings",
+            "org.mockito.internal.matchers.text.ValuePrinter",
+            "org.mockito.invocation.Invocation",
+            "org.mockito.mock.MockCreationSettings",
+            "org.mockito.stubbing.Stubbing",
+            "org.mockito.Mockito",
+            "org.mockito.listeners.VerificationStartedEvent",
+            "org.mockito.listeners.VerificationStartedListener",
+            "org.mockito.internal.exceptions.Reporter",
+            "org.mockito.listeners.StubbingLookupListener"
+        ]
+    },
+    "org.mockito.internal.session": {
+        "imports": [
+            "org.mockito.session.MockitoSessionBuilder",
+            "org.mockito.internal.configuration.plugins.Plugins",
+            "org.mockito.plugins.MockitoLogger",
+            "org.mockito.MockitoSession",
+            "org.mockito.quality.Strictness",
+            "org.mockito.session.MockitoSessionLogger",
+            "org.mockito.internal.framework.DefaultMockitoSession"
+        ]
+    },
+    "org.mockito.exceptions.misusing": {
+        "imports": [
+            "org.mockito.session.MockitoSessionBuilder",
+            "org.mockito.MockitoSession",
+            "org.mockito.quality.Strictness",
+            "org.mockito.Mockito",
+            "org.mockito.listeners.MockitoListener",
+            "org.mockito.exceptions.base.MockitoException"
+        ]
+    },
+    "org.mockito.exceptions.verification": {
+        "imports": [
+            "org.mockito.exceptions.base.MockitoException",
+            "org.mockito.internal.util.StringUtil.removeFirstLine",
+            "org.mockito.exceptions.base.MockitoAssertionError"
+        ]
+    },
+    "org.mockito.exceptions.verification.junit": {
+        "imports": [
+            "org.mockito.internal.exceptions.stacktrace.ConditionalStackTraceFilter",
+            "org.mockito.internal.util.StringUtil.removeFirstLine"
+        ]
+    },
+    "org.mockito.exceptions.verification.opentest4j": {
+        "imports": [
+            "org.mockito.internal.exceptions.stacktrace.ConditionalStackTraceFilter",
+            "org.mockito.internal.util.StringUtil.removeFirstLine"
+        ]
+    },
+    "org.mockito.exceptions.base": {
+        "imports": [
+            "org.mockito.internal.exceptions.stacktrace.ConditionalStackTraceFilter"
+        ]
+    },
+    "org.mockito.verification": {
+        "imports": [
+            "org.mockito.internal.verification.VerificationModeFactory",
+            "org.mockito.internal.verification.VerificationOverTimeImpl",
+            "org.mockito.internal.verification.VerificationWrapper",
+            "org.mockito.internal.exceptions.Reporter.atMostAndNeverShouldNotBeUsedWithTimeout",
+            "org.mockito.Mockito",
+            "org.mockito.internal.verification.api.VerificationData",
+            "org.mockito.internal.util.Timer"
+        ]
+    },
+    "org.mockito.creation.instance": {
+        "imports": [
+            "org.mockito.exceptions.base.MockitoException"
+        ]
+    },
+    "org.mockito.stubbing": {
+        "imports": [
+            "org.mockito.MockingDetails",
+            "org.mockito.CheckReturnValue",
+            "org.mockito.invocation.Invocation",
+            "org.mockito.NotExtensible",
+            "org.mockito.quality.Strictness",
+            "org.mockito.invocation.InvocationOnMock",
+            "org.mockito.Mockito"
+        ]
+    },
+    "org.mockito.listeners": {
+        "imports": [
+            "org.mockito.stubbing.Stubbing",
+            "org.mockito.invocation.Invocation",
+            "org.mockito.mock.MockCreationSettings",
+            "org.mockito.invocation.DescribedInvocation",
+            "org.mockito.MockSettings",
+            "org.mockito.verification.VerificationEvent"
+        ]
+    },
+    "org.mockito.session": {
+        "imports": [
+            "org.mockito.MockitoSession",
+            "org.mockito.quality.Strictness",
+            "org.mockito.NotExtensible",
+            "org.mockito.exceptions.misusing.UnfinishedMockingSessionException",
+            "org.mockito.MockitoAnnotations"
+        ]
+    }
+}
