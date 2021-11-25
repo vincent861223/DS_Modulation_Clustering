@@ -18,7 +18,8 @@ class Population:
         self.best_ind = None
         self.finished = False
         self.perfect_score = 1.0
-        self.max_fitness = 0.0
+        self.max_fitness = float('-inf')
+        self.max_ind = None
         self.average_fitness = 0.0
         self.mating_pool = []
 
@@ -26,8 +27,6 @@ class Population:
             ind = Individual(len(dep_graph.keys()))
             ind.calc_fitness(dep_graph)
 
-            if ind.fitness > self.max_fitness:
-                self.max_fitness = ind.fitness
 
             self.average_fitness += ind.fitness
             self.population.append(ind)
@@ -38,6 +37,7 @@ class Population:
         print("\nPopulation " + str(self.generations))
         print("Average fitness: " + str(self.average_fitness))
         print("Best individual: " + str(self.best_ind))
+        print("Max individual: " + str(self.max_ind))
         print('Max_fitness: ', self.max_fitness)
 
     # Generate a mating pool according to the probability of each individual
@@ -50,7 +50,10 @@ class Population:
 
         for i, ind in enumerate(self.population):
             prob = int(round(ind.fitness * 100))
+            prob = max(prob, 1)
             self.mating_pool.extend([i for j in range(prob)])
+        # if not self.mating_pool:
+        #     self.mating_pool = [i for i, ind in ]
 
     # Generate the new population based on the natural selection function
     def generate_new_population(self):
@@ -85,14 +88,16 @@ class Population:
     # Compute/Identify the current "most fit" individual within the population
 
     def evaluate(self):
-        best_fitness = 0.0
+        best_fitness = float('-inf')
 
         for ind in self.population:
             if ind.fitness > best_fitness:
                 best_fitness = ind.fitness
                 self.best_ind = ind
 
-        self.max_fitness = max(self.max_fitness, best_fitness)
+        if best_fitness > self.max_fitness: 
+            self.max_ind = self.best_ind
+            self.max_fitness = best_fitness
 
         if best_fitness == self.perfect_score:
             self.finished = True
