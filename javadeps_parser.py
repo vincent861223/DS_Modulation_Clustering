@@ -1,4 +1,5 @@
 import javalang
+import json
 import os
 import sys
 from collections import defaultdict
@@ -12,7 +13,7 @@ class Javadeps_parser:
     def find_dependencies(self, fname, source):
         ast = javalang.parse.parse(source)
         # print(ast)
-
+        output = dict()
         for imp in ast.imports:
             # print(imp)
             if not imp.path.startswith(self.valid_imports):
@@ -20,6 +21,11 @@ class Javadeps_parser:
             else:
                 self.dependencies[fname].add(imp.path)
 
+            #     self.dependencies[ast.package.name].add(imp.path)
+            # for i in list(self.dependencies):
+            #     output[i] = {'imports': list(self.dependencies[i])}
+            # with open('java_dep.json', 'w') as f:
+            #     json.dump(output, f, indent=4)
 
     def parse_files(self):
         for file in self.allFiles:
