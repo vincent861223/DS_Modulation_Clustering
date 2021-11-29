@@ -49,7 +49,7 @@ class JdepsParser:
 
 if __name__ == '__main__':
     args = argparser().parse_args()
-    jdeps_parser = JdepsParser(f=args.input_file, p_name="org.mockito")
+    jdeps_parser = JdepsParser(f=args.input_file, p_name="org.java_websocket")
     # pprint(jdeps_parser.get())
     with open(args.output_file, 'w') as f:
         json.dump(jdeps_parser.get(), f, sort_keys=True, indent=4)

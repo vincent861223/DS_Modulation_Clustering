@@ -1,0 +1,557 @@
+{
+    "org.java_websocket.AbstractWebSocket": {
+        "imports": [
+            "org.java_websocket.AbstractWebSocket$1",
+            "org.java_websocket.util.NamedThreadFactory",
+            "org.java_websocket.WebSocket",
+            "org.java_websocket.framing.CloseFrame",
+            "org.java_websocket.WebSocketAdapter",
+            "org.java_websocket.WebSocketImpl"
+        ]
+    },
+    "org.java_websocket.AbstractWebSocket$1": {
+        "imports": [
+            "org.java_websocket.WebSocket",
+            "org.java_websocket.AbstractWebSocket"
+        ]
+    },
+    "org.java_websocket.AbstractWrappedByteChannel": {
+        "imports": [
+            "org.java_websocket.WrappedByteChannel"
+        ]
+    },
+    "org.java_websocket.SSLSocketChannel": {
+        "imports": [
+            "org.java_websocket.util.ByteBufferUtils",
+            "org.java_websocket.WrappedByteChannel",
+            "org.java_websocket.SSLSocketChannel$1",
+            "org.java_websocket.interfaces.ISSLChannel"
+        ]
+    },
+    "org.java_websocket.SSLSocketChannel$1": {
+        "imports": [
+            "org.java_websocket.SSLSocketChannel"
+        ]
+    },
+    "org.java_websocket.SSLSocketChannel2": {
+        "imports": [
+            "org.java_websocket.WrappedByteChannel",
+            "org.java_websocket.interfaces.ISSLChannel"
+        ]
+    },
+    "org.java_websocket.SocketChannelIOHelper": {
+        "imports": [
+            "org.java_websocket.WebSocketImpl",
+            "org.java_websocket.WrappedByteChannel",
+            "org.java_websocket.enums.Role",
+            "org.java_websocket.drafts.Draft"
+        ]
+    },
+    "org.java_websocket.WebSocket": {
+        "imports": [
+            "org.java_websocket.enums.ReadyState",
+            "org.java_websocket.framing.Framedata",
+            "org.java_websocket.enums.Opcode",
+            "org.java_websocket.drafts.Draft"
+        ]
+    },
+    "org.java_websocket.WebSocketAdapter": {
+        "imports": [
+            "org.java_websocket.handshake.ServerHandshakeBuilder",
+            "org.java_websocket.handshake.HandshakeImpl1Server",
+            "org.java_websocket.WebSocket",
+            "org.java_websocket.framing.PingFrame",
+            "org.java_websocket.handshake.ServerHandshake",
+            "org.java_websocket.exceptions.InvalidDataException",
+            "org.java_websocket.WebSocketListener",
+            "org.java_websocket.drafts.Draft",
+            "org.java_websocket.framing.PongFrame",
+            "org.java_websocket.framing.Framedata",
+            "org.java_websocket.handshake.ClientHandshake"
+        ]
+    },
+    "org.java_websocket.WebSocketFactory": {
+        "imports": [
+            "org.java_websocket.WebSocketAdapter",
+            "org.java_websocket.WebSocket",
+            "org.java_websocket.drafts.Draft"
+        ]
+    },
+    "org.java_websocket.WebSocketImpl": {
+        "imports": [
+            "org.java_websocket.exceptions.IncompleteHandshakeException",
+            "org.java_websocket.exceptions.LimitExceededException",
+            "org.java_websocket.framing.PingFrame",
+            "org.java_websocket.exceptions.InvalidDataException",
+            "org.java_websocket.server.WebSocketServer",
+            "org.java_websocket.framing.Framedata",
+            "org.java_websocket.enums.Opcode",
+            "org.java_websocket.enums.ReadyState",
+            "org.java_websocket.server.WebSocketServer$WebSocketWorker",
+            "org.java_websocket.WebSocket",
+            "org.java_websocket.handshake.ServerHandshake",
+            "org.java_websocket.handshake.HandshakeBuilder",
+            "org.java_websocket.handshake.Handshakedata",
+            "org.java_websocket.framing.CloseFrame",
+            "org.java_websocket.drafts.Draft_6455",
+            "org.java_websocket.exceptions.InvalidHandshakeException",
+            "org.java_websocket.enums.Role",
+            "org.java_websocket.WebSocketListener",
+            "org.java_websocket.exceptions.WebsocketNotConnectedException",
+            "org.java_websocket.enums.CloseHandshakeType",
+            "org.java_websocket.enums.HandshakeState",
+            "org.java_websocket.handshake.ClientHandshake",
+            "org.java_websocket.handshake.ServerHandshakeBuilder",
+            "org.java_websocket.util.Charsetfunctions",
+            "org.java_websocket.handshake.ClientHandshakeBuilder",
+            "org.java_websocket.interfaces.ISSLChannel",
+            "org.java_websocket.drafts.Draft"
+        ]
+    },
+    "org.java_websocket.WebSocketListener": {
+        "imports": [
+            "org.java_websocket.handshake.ServerHandshakeBuilder",
+            "org.java_websocket.WebSocket",
+            "org.java_websocket.framing.PingFrame",
+            "org.java_websocket.handshake.ServerHandshake",
+            "org.java_websocket.exceptions.InvalidDataException",
+            "org.java_websocket.handshake.Handshakedata",
+            "org.java_websocket.drafts.Draft",
+            "org.java_websocket.framing.Framedata",
+            "org.java_websocket.handshake.ClientHandshake"
+        ]
+    },
+    "org.java_websocket.WebSocketServerFactory": {
+        "imports": [
+            "org.java_websocket.WebSocketAdapter",
+            "org.java_websocket.WebSocketImpl",
+            "org.java_websocket.WebSocketFactory",
+            "org.java_websocket.drafts.Draft"
+        ]
+    },
+    "org.java_websocket.WrappedByteChannel": {
+        "imports": []
+    },
+    "org.java_websocket.client.DnsResolver": {
+        "imports": []
+    },
+    "org.java_websocket.client.WebSocketClient": {
+        "imports": [
+            "org.java_websocket.client.DnsResolver",
+            "org.java_websocket.drafts.Draft_6455",
+            "org.java_websocket.enums.ReadyState",
+            "org.java_websocket.AbstractWebSocket",
+            "org.java_websocket.client.WebSocketClient$1",
+            "org.java_websocket.WebSocket",
+            "org.java_websocket.exceptions.InvalidHandshakeException",
+            "org.java_websocket.handshake.ServerHandshake",
+            "org.java_websocket.WebSocketListener",
+            "org.java_websocket.handshake.HandshakeImpl1Client",
+            "org.java_websocket.handshake.ClientHandshakeBuilder",
+            "org.java_websocket.framing.CloseFrame",
+            "org.java_websocket.handshake.Handshakedata",
+            "org.java_websocket.drafts.Draft",
+            "org.java_websocket.WebSocketImpl",
+            "org.java_websocket.framing.Framedata",
+            "org.java_websocket.enums.Opcode",
+            "org.java_websocket.client.WebSocketClient$WebsocketWriteThread"
+        ]
+    },
+    "org.java_websocket.client.WebSocketClient$1": {
+        "imports": [
+            "org.java_websocket.client.DnsResolver",
+            "org.java_websocket.client.WebSocketClient",
+            "org.java_websocket.drafts.Draft"
+        ]
+    },
+    "org.java_websocket.client.WebSocketClient$WebsocketWriteThread": {
+        "imports": [
+            "org.java_websocket.WebSocketImpl",
+            "org.java_websocket.WebSocket",
+            "org.java_websocket.client.WebSocketClient"
+        ]
+    },
+    "org.java_websocket.drafts.Draft": {
+        "imports": [
+            "org.java_websocket.WebSocketImpl",
+            "org.java_websocket.exceptions.IncompleteHandshakeException",
+            "org.java_websocket.exceptions.InvalidDataException",
+            "org.java_websocket.framing.Framedata",
+            "org.java_websocket.enums.Opcode",
+            "org.java_websocket.handshake.ServerHandshake",
+            "org.java_websocket.handshake.HandshakeBuilder",
+            "org.java_websocket.handshake.HandshakeImpl1Client",
+            "org.java_websocket.handshake.Handshakedata",
+            "org.java_websocket.framing.CloseFrame",
+            "org.java_websocket.handshake.HandshakeImpl1Server",
+            "org.java_websocket.exceptions.InvalidHandshakeException",
+            "org.java_websocket.enums.Role",
+            "org.java_websocket.framing.TextFrame",
+            "org.java_websocket.enums.CloseHandshakeType",
+            "org.java_websocket.handshake.ClientHandshake",
+            "org.java_websocket.enums.HandshakeState",
+            "org.java_websocket.handshake.ServerHandshakeBuilder",
+            "org.java_websocket.framing.ContinuousFrame",
+            "org.java_websocket.util.Charsetfunctions",
+            "org.java_websocket.handshake.ClientHandshakeBuilder",
+            "org.java_websocket.framing.DataFrame",
+            "org.java_websocket.framing.BinaryFrame"
+        ]
+    },
+    "org.java_websocket.drafts.Draft_6455": {
+        "imports": [
+            "org.java_websocket.exceptions.IncompleteException",
+            "org.java_websocket.exceptions.LimitExceededException",
+            "org.java_websocket.exceptions.InvalidDataException",
+            "org.java_websocket.framing.Framedata",
+            "org.java_websocket.enums.Opcode",
+            "org.java_websocket.exceptions.InvalidFrameException",
+            "org.java_websocket.framing.FramedataImpl1",
+            "org.java_websocket.enums.ReadyState",
+            "org.java_websocket.WebSocket",
+            "org.java_websocket.handshake.ServerHandshake",
+            "org.java_websocket.handshake.HandshakeBuilder",
+            "org.java_websocket.handshake.Handshakedata",
+            "org.java_websocket.framing.CloseFrame",
+            "org.java_websocket.extensions.DefaultExtension",
+            "org.java_websocket.exceptions.InvalidHandshakeException",
+            "org.java_websocket.enums.Role",
+            "org.java_websocket.WebSocketListener",
+            "org.java_websocket.framing.TextFrame",
+            "org.java_websocket.enums.CloseHandshakeType",
+            "org.java_websocket.enums.HandshakeState",
+            "org.java_websocket.handshake.ClientHandshake",
+            "org.java_websocket.handshake.ServerHandshakeBuilder",
+            "org.java_websocket.extensions.IExtension",
+            "org.java_websocket.util.Charsetfunctions",
+            "org.java_websocket.protocols.IProtocol",
+            "org.java_websocket.drafts.Draft_6455$TranslatedPayloadMetaData",
+            "org.java_websocket.handshake.ClientHandshakeBuilder",
+            "org.java_websocket.protocols.Protocol",
+            "org.java_websocket.exceptions.NotSendableException",
+            "org.java_websocket.drafts.Draft",
+            "org.java_websocket.WebSocketImpl",
+            "org.java_websocket.framing.BinaryFrame",
+            "org.java_websocket.util.Base64"
+        ]
+    },
+    "org.java_websocket.drafts.Draft_6455$TranslatedPayloadMetaData": {
+        "imports": [
+            "org.java_websocket.drafts.Draft_6455"
+        ]
+    },
+    "org.java_websocket.enums.CloseHandshakeType": {
+        "imports": []
+    },
+    "org.java_websocket.enums.HandshakeState": {
+        "imports": []
+    },
+    "org.java_websocket.enums.Opcode": {
+        "imports": []
+    },
+    "org.java_websocket.enums.ReadyState": {
+        "imports": []
+    },
+    "org.java_websocket.enums.Role": {
+        "imports": []
+    },
+    "org.java_websocket.exceptions.IncompleteException": {
+        "imports": []
+    },
+    "org.java_websocket.exceptions.IncompleteHandshakeException": {
+        "imports": []
+    },
+    "org.java_websocket.exceptions.InvalidDataException": {
+        "imports": []
+    },
+    "org.java_websocket.exceptions.InvalidEncodingException": {
+        "imports": []
+    },
+    "org.java_websocket.exceptions.InvalidFrameException": {
+        "imports": [
+            "org.java_websocket.framing.CloseFrame",
+            "org.java_websocket.exceptions.InvalidDataException"
+        ]
+    },
+    "org.java_websocket.exceptions.InvalidHandshakeException": {
+        "imports": [
+            "org.java_websocket.framing.CloseFrame",
+            "org.java_websocket.exceptions.InvalidDataException"
+        ]
+    },
+    "org.java_websocket.exceptions.LimitExceededException": {
+        "imports": [
+            "org.java_websocket.framing.CloseFrame",
+            "org.java_websocket.exceptions.InvalidDataException"
+        ]
+    },
+    "org.java_websocket.exceptions.NotSendableException": {
+        "imports": []
+    },
+    "org.java_websocket.exceptions.WebsocketNotConnectedException": {
+        "imports": []
+    },
+    "org.java_websocket.exceptions.WrappedIOException": {
+        "imports": [
+            "org.java_websocket.WebSocket"
+        ]
+    },
+    "org.java_websocket.extensions.CompressionExtension": {
+        "imports": [
+            "org.java_websocket.extensions.DefaultExtension",
+            "org.java_websocket.exceptions.InvalidDataException",
+            "org.java_websocket.framing.ControlFrame",
+            "org.java_websocket.exceptions.InvalidFrameException",
+            "org.java_websocket.framing.Framedata",
+            "org.java_websocket.framing.DataFrame"
+        ]
+    },
+    "org.java_websocket.extensions.DefaultExtension": {
+        "imports": [
+            "org.java_websocket.extensions.IExtension",
+            "org.java_websocket.framing.Framedata",
+            "org.java_websocket.exceptions.InvalidFrameException",
+            "org.java_websocket.exceptions.InvalidDataException"
+        ]
+    },
+    "org.java_websocket.extensions.IExtension": {
+        "imports": [
+            "org.java_websocket.framing.Framedata",
+            "org.java_websocket.exceptions.InvalidDataException"
+        ]
+    },
+    "org.java_websocket.framing.BinaryFrame": {
+        "imports": [
+            "org.java_websocket.framing.DataFrame",
+            "org.java_websocket.enums.Opcode"
+        ]
+    },
+    "org.java_websocket.framing.CloseFrame": {
+        "imports": [
+            "org.java_websocket.util.ByteBufferUtils",
+            "org.java_websocket.util.Charsetfunctions",
+            "org.java_websocket.exceptions.InvalidDataException",
+            "org.java_websocket.framing.ControlFrame",
+            "org.java_websocket.enums.Opcode",
+            "org.java_websocket.exceptions.InvalidFrameException"
+        ]
+    },
+    "org.java_websocket.framing.ContinuousFrame": {
+        "imports": [
+            "org.java_websocket.framing.DataFrame",
+            "org.java_websocket.enums.Opcode"
+        ]
+    },
+    "org.java_websocket.framing.ControlFrame": {
+        "imports": [
+            "org.java_websocket.framing.FramedataImpl1",
+            "org.java_websocket.enums.Opcode",
+            "org.java_websocket.exceptions.InvalidFrameException",
+            "org.java_websocket.exceptions.InvalidDataException"
+        ]
+    },
+    "org.java_websocket.framing.DataFrame": {
+        "imports": [
+            "org.java_websocket.enums.Opcode",
+            "org.java_websocket.framing.FramedataImpl1",
+            "org.java_websocket.exceptions.InvalidDataException"
+        ]
+    },
+    "org.java_websocket.framing.Framedata": {
+        "imports": [
+            "org.java_websocket.enums.Opcode"
+        ]
+    },
+    "org.java_websocket.framing.FramedataImpl1": {
+        "imports": [
+            "org.java_websocket.util.ByteBufferUtils",
+            "org.java_websocket.framing.PingFrame",
+            "org.java_websocket.exceptions.InvalidDataException",
+            "org.java_websocket.framing.FramedataImpl1$1",
+            "org.java_websocket.framing.CloseFrame",
+            "org.java_websocket.framing.TextFrame",
+            "org.java_websocket.framing.PongFrame",
+            "org.java_websocket.framing.Framedata",
+            "org.java_websocket.enums.Opcode",
+            "org.java_websocket.framing.BinaryFrame",
+            "org.java_websocket.framing.ContinuousFrame"
+        ]
+    },
+    "org.java_websocket.framing.FramedataImpl1$1": {
+        "imports": [
+            "org.java_websocket.enums.Opcode",
+            "org.java_websocket.framing.FramedataImpl1"
+        ]
+    },
+    "org.java_websocket.framing.PingFrame": {
+        "imports": [
+            "org.java_websocket.framing.ControlFrame",
+            "org.java_websocket.enums.Opcode"
+        ]
+    },
+    "org.java_websocket.framing.PongFrame": {
+        "imports": [
+            "org.java_websocket.framing.ControlFrame",
+            "org.java_websocket.framing.PingFrame",
+            "org.java_websocket.enums.Opcode"
+        ]
+    },
+    "org.java_websocket.framing.TextFrame": {
+        "imports": [
+            "org.java_websocket.util.Charsetfunctions",
+            "org.java_websocket.exceptions.InvalidDataException",
+            "org.java_websocket.framing.CloseFrame",
+            "org.java_websocket.framing.DataFrame",
+            "org.java_websocket.enums.Opcode"
+        ]
+    },
+    "org.java_websocket.handshake.ClientHandshake": {
+        "imports": [
+            "org.java_websocket.handshake.Handshakedata"
+        ]
+    },
+    "org.java_websocket.handshake.ClientHandshakeBuilder": {
+        "imports": [
+            "org.java_websocket.handshake.ClientHandshake",
+            "org.java_websocket.handshake.HandshakeBuilder"
+        ]
+    },
+    "org.java_websocket.handshake.HandshakeBuilder": {
+        "imports": [
+            "org.java_websocket.handshake.Handshakedata"
+        ]
+    },
+    "org.java_websocket.handshake.HandshakeImpl1Client": {
+        "imports": [
+            "org.java_websocket.handshake.ClientHandshakeBuilder",
+            "org.java_websocket.handshake.HandshakedataImpl1"
+        ]
+    },
+    "org.java_websocket.handshake.HandshakeImpl1Server": {
+        "imports": [
+            "org.java_websocket.handshake.HandshakedataImpl1",
+            "org.java_websocket.handshake.ServerHandshakeBuilder"
+        ]
+    },
+    "org.java_websocket.handshake.Handshakedata": {
+        "imports": []
+    },
+    "org.java_websocket.handshake.HandshakedataImpl1": {
+        "imports": [
+            "org.java_websocket.handshake.HandshakeBuilder"
+        ]
+    },
+    "org.java_websocket.handshake.ServerHandshake": {
+        "imports": [
+            "org.java_websocket.handshake.Handshakedata"
+        ]
+    },
+    "org.java_websocket.handshake.ServerHandshakeBuilder": {
+        "imports": [
+            "org.java_websocket.handshake.ServerHandshake",
+            "org.java_websocket.handshake.HandshakeBuilder"
+        ]
+    },
+    "org.java_websocket.interfaces.ISSLChannel": {
+        "imports": []
+    },
+    "org.java_websocket.protocols.IProtocol": {
+        "imports": []
+    },
+    "org.java_websocket.protocols.Protocol": {
+        "imports": [
+            "org.java_websocket.protocols.IProtocol"
+        ]
+    },
+    "org.java_websocket.server.CustomSSLWebSocketServerFactory": {
+        "imports": [
+            "org.java_websocket.server.DefaultSSLWebSocketServerFactory",
+            "org.java_websocket.SSLSocketChannel2"
+        ]
+    },
+    "org.java_websocket.server.DefaultSSLWebSocketServerFactory": {
+        "imports": [
+            "org.java_websocket.WebSocket",
+            "org.java_websocket.WebSocketListener",
+            "org.java_websocket.WebSocketServerFactory",
+            "org.java_websocket.drafts.Draft",
+            "org.java_websocket.WebSocketAdapter",
+            "org.java_websocket.WebSocketImpl",
+            "org.java_websocket.SSLSocketChannel2"
+        ]
+    },
+    "org.java_websocket.server.DefaultWebSocketServerFactory": {
+        "imports": [
+            "org.java_websocket.WebSocket",
+            "org.java_websocket.WebSocketListener",
+            "org.java_websocket.WebSocketServerFactory",
+            "org.java_websocket.drafts.Draft",
+            "org.java_websocket.WebSocketAdapter",
+            "org.java_websocket.WebSocketImpl"
+        ]
+    },
+    "org.java_websocket.server.SSLParametersWebSocketServerFactory": {
+        "imports": [
+            "org.java_websocket.server.DefaultSSLWebSocketServerFactory",
+            "org.java_websocket.SSLSocketChannel2"
+        ]
+    },
+    "org.java_websocket.server.WebSocketServer": {
+        "imports": [
+            "org.java_websocket.SocketChannelIOHelper",
+            "org.java_websocket.AbstractWebSocket",
+            "org.java_websocket.server.WebSocketServer$WebSocketWorker",
+            "org.java_websocket.WebSocket",
+            "org.java_websocket.WebSocketServerFactory",
+            "org.java_websocket.exceptions.WebsocketNotConnectedException",
+            "org.java_websocket.WrappedByteChannel",
+            "org.java_websocket.framing.CloseFrame",
+            "org.java_websocket.WebSocketFactory",
+            "org.java_websocket.exceptions.WrappedIOException",
+            "org.java_websocket.handshake.Handshakedata",
+            "org.java_websocket.drafts.Draft",
+            "org.java_websocket.WebSocketAdapter",
+            "org.java_websocket.WebSocketImpl",
+            "org.java_websocket.framing.Framedata",
+            "org.java_websocket.server.DefaultWebSocketServerFactory",
+            "org.java_websocket.handshake.ClientHandshake"
+        ]
+    },
+    "org.java_websocket.server.WebSocketServer$WebSocketWorker": {
+        "imports": [
+            "org.java_websocket.WebSocketImpl",
+            "org.java_websocket.WebSocket",
+            "org.java_websocket.server.WebSocketServer$WebSocketWorker$1",
+            "org.java_websocket.server.WebSocketServer"
+        ]
+    },
+    "org.java_websocket.server.WebSocketServer$WebSocketWorker$1": {
+        "imports": [
+            "org.java_websocket.server.WebSocketServer$WebSocketWorker",
+            "org.java_websocket.server.WebSocketServer"
+        ]
+    },
+    "org.java_websocket.util.Base64": {
+        "imports": [
+            "org.java_websocket.util.Base64$OutputStream"
+        ]
+    },
+    "org.java_websocket.util.Base64$OutputStream": {
+        "imports": [
+            "org.java_websocket.util.Base64"
+        ]
+    },
+    "org.java_websocket.util.ByteBufferUtils": {
+        "imports": []
+    },
+    "org.java_websocket.util.Charsetfunctions": {
+        "imports": [
+            "org.java_websocket.framing.CloseFrame",
+            "org.java_websocket.exceptions.InvalidEncodingException",
+            "org.java_websocket.exceptions.InvalidDataException"
+        ]
+    },
+    "org.java_websocket.util.NamedThreadFactory": {
+        "imports": []
+    }
+}
