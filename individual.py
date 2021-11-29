@@ -13,7 +13,7 @@ class Individual:
 
     def __init__(self, n_nodes):
         self.fitness = 0
-        self.n_cluster = 5
+        self.n_cluster = 1
         self.max_n_cluster = 10
         self.genes = self.generate_random_genes(n_nodes)
 
@@ -98,23 +98,23 @@ class Individual:
     # Mutation: based on a mutation probability, the function picks a new random character and replace a gene with it
     def mutate(self, mutation_rate, n_cluster_mutation_rate):
         # code to mutate the individual here
-        # for i, gene in enumerate(self.genes):
-        #     if random.uniform(0, 1) < mutation_rate:
-        #         self.genes[i] += 1
-        # self.genes = self.resetClusterIndex(self.genes) 
-
-
-        # self.n_cluster = max(self.genes) + 1
-
         for i, gene in enumerate(self.genes):
             if random.uniform(0, 1) < mutation_rate:
-                self.genes[i] = random.randint(0, self.n_cluster)
+                self.genes[i] += 1
         self.genes = self.resetClusterIndex(self.genes) 
 
-        if random.uniform(0, 1) < mutation_rate:
-                self.genes[i] = random.randint(0, self.n_cluster + 1)
 
         self.n_cluster = max(self.genes) + 1
+
+        # for i, gene in enumerate(self.genes):
+        #     if random.uniform(0, 1) < mutation_rate:
+        #         self.genes[i] = random.randint(0, self.n_cluster)
+        # self.genes = self.resetClusterIndex(self.genes) 
+
+        # if random.uniform(0, 1) < mutation_rate:
+        #         self.genes[i] = random.randint(0, self.n_cluster + 1)
+
+        # self.n_cluster = max(self.genes) + 1
 
     def resetClusterIndex(self, cluster):
         indexes = set(cluster)
