@@ -1,5 +1,14 @@
 # parsing output from "jdeps -v ./build/libs/mockito-core-4.1.1-SNAPSHOT.jar > jdeps-output.txt"
 from pprint import pprint
+import argparse
+import json
+
+def argparser():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-i", dest='input_file', type=str, default="jdeps-output.txt")
+    parser.add_argument("-o", dest='output_file', type=str, default="dep.json")
+
+    return parser
 
 
 class JdepsParser:
@@ -19,11 +28,17 @@ class JdepsParser:
                     continue
                 key = elements[0]
                 val = elements[2]
+                if 'internal' in key: continue
                 if key not in deps_set:
                     deps_set[key] = {}
                     deps_set[key]["imports"] = set()
 
+                if 'internal' in val: continue
                 deps_set[key]["imports"].add(val)
+
+                if val not in deps_set:
+                    deps_set[val] = {}
+                    deps_set[val]["imports"] = set()
 
         # convert set to list
         for k, v in deps_set.items():
@@ -33,5 +48,8 @@ class JdepsParser:
 
 
 if __name__ == '__main__':
-    jdeps_parser = JdepsParser(f="./jdeps-output.txt", p_name="org.mockito")
-    pprint(jdeps_parser.get())
+    args = argparser().parse_args()
+    jdeps_parser = JdepsParser(f=args.input_file, p_name="org.mockito")
+    # pprint(jdeps_parser.get())
+    with open(args.output_file, 'w') as f:
+        json.dump(jdeps_parser.get(), f, sort_keys=True, indent=4)

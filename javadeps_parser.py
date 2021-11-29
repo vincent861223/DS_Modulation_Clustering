@@ -38,6 +38,8 @@ class Javadeps_parser:
 
             self.find_dependencies(fname, source)
         print(self.dependencies)
+        # with open('dep.json', 'w') as f:
+        #     json.dump(self.dependencies, f, sort_keys=True, indent=4)
 
     def get_java_files(self, dirName):
         # create a list of file and sub directories

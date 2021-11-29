@@ -1,0 +1,7 @@
+1. Explore->exploit
+2. 比腳原始碼跟我們cluster之後的fitness分數還有圖
+3. 分析我們做出來的cluster合不合理
+4. 初始n_cluster對結果的影響
+5. Mutat: 比較0~n_cluster-1和直接+1
+6. Crossover 的部位
+7. Population

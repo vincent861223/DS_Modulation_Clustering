@@ -3,3 +3,6 @@
 pydriller
 __pycache__
 java-design-patterns
+mockito
+selenium
+*.gv*

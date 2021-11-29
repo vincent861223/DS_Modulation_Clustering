@@ -11,8 +11,10 @@ def argparser():
     parser.add_argument("--cro", type=float, default=1)
     parser.add_argument("--maxGen", type=int, default=10000)
     parser.add_argument("--repeat", type=int, default=1)
-    parser.add_argument("--printInterval", type=int, default=100)
+    parser.add_argument("--printInterval", type=int, default=50)
+    parser.add_argument("--project", type=str, default="mockito")
     parser.add_argument("--dep", type=str, default="test.json")
+    parser.add_argument("--output", dest='output_file', type=str, default="results/output.json")
 
     return parser
 
@@ -22,8 +24,10 @@ def main(args):
     mutation_rate = args.mut 
     crossover_rate = args.cro
     max_generation = args.maxGen
+    dep_file = "deps/{}.json".format(args.project)
+    result_file = "results/{}_ga.json".format(args.project)
 
-    with open(args.dep) as f:
+    with open(dep_file) as f:
         dep_graph = json.load(f)
 
     print(len(dep_graph.keys()))
@@ -50,6 +54,18 @@ def main(args):
     print("Average: ", sum(generations)/len(generations))
     print("execTime: ", execTime)
     print("Average: ", sum(execTime)/len(execTime))
+
+    outputResults(result_file, dep_graph, pop.max_ind.genes)
+
+
+def outputResults(output_file, dep_graph, clusters):
+    result = {}
+    for node, cluster in zip(dep_graph.keys(), clusters):
+        result[node] = cluster
+    
+    with open(output_file, 'w') as f:
+        json.dump(result, f, sort_keys=True, indent=4)
+
 
 
 if __name__ == "__main__":

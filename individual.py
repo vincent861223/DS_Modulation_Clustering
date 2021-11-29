@@ -13,7 +13,7 @@ class Individual:
 
     def __init__(self, n_nodes):
         self.fitness = 0
-        self.n_cluster = 1
+        self.n_cluster = 2
         self.max_n_cluster = 10
         self.genes = self.generate_random_genes(n_nodes)
 

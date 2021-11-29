@@ -19,6 +19,16 @@ pip install -r requirements.txt
 
 
 ## Usage
+* Run Genetic Algorithm
 ```
-python3 start.py
+python3 start.py --project mockito --maxGen 100
+```
+
+* Visualize original package
+```
+python3 visualization.py --type org 
+```
+* Visualize GA package clustering
+```
+python3 visualization.py --type ga 
 ```
